@@ -1,0 +1,43 @@
+// ====== Home page =======
+// banner
+.banner-section {
+  background-image: url(../public/images/get-paid-bg.png),
+    url(../public/images/get-paid-coin.png),
+    linear-gradient(180deg, #5502e4 0%, #591e9e 100%);
+  background-position: center, right bottom, bottom;
+  background-repeat: no-repeat;
+  background-size: cover, auto, cover;
+}
+
+// counter
+.border-gradient-second {
+  background: linear-gradient(#2e3549, #2e3549) padding-box,
+    linear-gradient(to top left, #fe53bb, #09fbd3) border-box;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  padding: 30px;
+  position: relative;
+  z-index: 0;
+}
+
+.border-gradient-second::before {
+  position: absolute;
+  content: "";
+  background: #2e3549;
+  border-radius: 30px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transform: skew(-0.5deg, -0.5deg);
+}
+
+.border-gradientq {
+  background: linear-gradient(#2e3549, #2e3549) padding-box,
+    linear-gradient(to top left, #09fbd3, #fe53bb) border-box;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  position: relative;
+  z-index: 0;
+}

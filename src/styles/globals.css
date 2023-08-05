@@ -7,6 +7,42 @@ input {
   outline: none;
 }
 
+@layer components {
+  .section-gap {
+    @apply pt-[120px];
+  }
+
+  .padding-top-120 {
+    @apply pt-[120px];
+  }
+  .padding-bottom-120 {
+    @apply pb-[120px];
+  }
+
+  .padding-left-120 {
+    @apply pl-[120px];
+  }
+
+  .padding-right-120 {
+    @apply pr-[120px];
+  }
+
+  .padding-top-60 {
+    @apply pt-[60px];
+  }
+  .padding-bottom-60 {
+    @apply pb-[60px];
+  }
+
+  .padding-left-60 {
+    @apply pl-[60px];
+  }
+
+  .padding-right-60 {
+    @apply pr-[60px];
+  }
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

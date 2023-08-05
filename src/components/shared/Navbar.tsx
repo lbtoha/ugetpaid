@@ -1,15 +1,16 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import logoFav from "@/public/images/fav.png";
 import logo from "@/public/images/logo.png";
 import NavItem from "./navbar/NavItem";
 import { navItemsData } from "@/public/data";
+import { MenuIsOpenOrNot } from "@/app/layout";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(true);
-
+  const { menuOpen, setMenuOpen } = useContext(MenuIsOpenOrNot);
+  console.log(menuOpen);
   return (
     <header>
       <div
@@ -31,7 +32,7 @@ const Navbar = () => {
             <form className="flex-auto max-w-[200px] lg:max-w-[463px] hidden sm:flex items-center px-[30px] border border-C3F4C71 focus-within:outline focus-within:outline-1 focus-within:outline-C09B65E gap-x-[10px] b bg-C212737 rounded-[15px]">
               <i className="icon-m-search text-2xl text-C6B7093"></i>
               <input
-                className="placeholder:text-C4B517A bg-inherit py-[13px]"
+                className="placeholder:text-C4B517A bg-transparent py-[13px]"
                 type="text"
                 placeholder="Offername, Offer wall, event, giveaway"
               />
@@ -59,7 +60,7 @@ const Navbar = () => {
       </div>
       {/* sidebar menu */}
       <div
-        className={`bg-C2E3549 p-5 absolute top-0 left-0 max-md:z-50 ${
+        className={`bg-C2E3549 p-5 fixed top-0 left-0 min-h-screen max-md:z-50 ${
           menuOpen ? "max-md:hidden" : "max-md:block"
         } ${menuOpen ? "w-[240px] md:w-[240px]" : "md:w-[150px]"}`}
       >
