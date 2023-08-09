@@ -2,13 +2,13 @@ import React from "react";
 import getPaidIllus from "@/public/images/get-paid-illus.png";
 import Image from "next/image";
 import Link from "next/link";
-import btnIcon from "@/public/images/icon/btn-icon-1.png";
 import paidShape1 from "@/public/images/get-paid-shape-1.png";
 import paidShape2 from "@/public/images/get-paid-shape-2.png";
 import paidShape3 from "@/public/images/get-paid-shape-3.png";
 import paidShape4 from "@/public/images/get-paid-shape-4.png";
+import PrimaryButton from "../shared/PrimaryButton";
 
-const Banner = () => {
+const GetPaid = () => {
   return (
     <section className="mt-[15px] banner-section rounded-xl relative">
       <div className="grid grid-cols-12  section-gap ">
@@ -22,13 +22,7 @@ const Banner = () => {
               Get up to $7.5 for each survey,Safe and easy payment
             </p>
             <div className="mt-[30px]">
-              <Link
-                href="/"
-                className="flex gap-x-2 items-center cursor-pointer text-base font-bold text-C282F41 bg-C09B65E px-5 py-[10px] w-fit rounded-xl"
-              >
-                <Image src={btnIcon} alt="btn icon" />
-                <span>Start Earning</span>
-              </Link>
+              <PrimaryButton buttonText="Start Earning" />
             </div>
           </div>
         </div>
@@ -63,4 +57,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default GetPaid;

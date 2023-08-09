@@ -114,12 +114,46 @@ module.exports = {
       C3D4661: "#3D4661",
       C185330: "#185330",
       C237042: "#237042",
+      C3E4762: "#3E4762",
+      C626F95: "#626F95",
+      C000000: "#000000",
+      C02835B: "#02835B",
+      C3D3C6B: "#3D3C6B",
+      C4C5179: "#4C5179",
+      C535E7C: "#535E7C",
+      C3C3E5C: "#3C3E5C",
+      C0E311F: "#0E311F",
+      C00FF7D: "#00FF7D",
+      C2F304A: "#2F304A",
+      C575988: "#575988",
+      C404365: "#404365",
+      C1B5C4E: "#1B5C4E",
+      CSHADOW: "0px 16px 30px 0px rgba(0, 0, 0, 0.25)",
     },
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-offer-walls-1":
+          "linear-gradient(155deg, #2E3549 0%, #12292E 100%)",
+        "gradient-offer-walls-2":
+          "linear-gradient(155deg, #2E3549 0%, #2E1212 100%)",
+        "gradient-offer-walls-3":
+          "linear-gradient(155deg, #2E3549 0%, #392F1B 100%)",
+        "gradient-offer-walls-4":
+          "linear-gradient(155deg, #2E3549 0%, #2F1C34 100%)",
+        "gradient-offer-walls-5":
+          "linear-gradient(155deg, #2E3549 0%, #1C341D 100%)",
+      },
+      spacing: {
+        S5: "0.313rem",
+        S10: "0.625rem",
+        S15: "0.938rem",
+        S30: "1.875rem",
+        S50: "3.125rem",
+        S60: "3.75rem",
+        S70: "4.375rem",
+        S80: "5rem",
+        S90: "5.625rem",
+        S120: "7.5rem",
       },
       keyframes: {},
       animation: {

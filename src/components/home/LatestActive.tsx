@@ -64,7 +64,7 @@ const LatestActive = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
-    speed: 5000,
+    speed: 4000,
     pauseOnHover: false,
     cssEase: "linear",
     arrows: false,
@@ -99,7 +99,7 @@ const LatestActive = () => {
   };
   return (
     <>
-      {/* <Slider {...settings}>
+      <Slider {...settings}>
         {latestActiveSliderData.map(
           ({ id, thumbnail, offerWall, offerName, reward }) => (
             <div key={id}>
@@ -127,7 +127,7 @@ const LatestActive = () => {
             </div>
           )
         )}
-      </Slider> */}
+      </Slider>
     </>
   );
 };

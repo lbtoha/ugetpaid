@@ -30,6 +30,7 @@ const HowGetPaid = () => {
               subHeading="Getting started is simple"
               heading="How to Get Paid to Take Surveys"
               paragraph="It has been made as easy as possible to make money on ugetpaid.you can start in less than 30 seconds."
+              paragraphWidth={374}
             />
             <div className="pt-[40px] space-y-5">
               {chooseTaskData.map(({ id, number, heading }) => (

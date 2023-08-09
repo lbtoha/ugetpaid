@@ -8,8 +8,14 @@ export const navItemsData = [
   {
     id: 1202,
     iconName: "icon-e-earn",
-    menuTitle: "Earn",
-    linkUrl: "/",
+    menuTitle: "Earn-1",
+    linkUrl: "/earn1",
+  },
+  {
+    id: 12055,
+    iconName: "icon-e-earn",
+    menuTitle: "Earn-2",
+    linkUrl: "/earn2",
   },
   {
     id: 1203,

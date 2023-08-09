@@ -10,7 +10,6 @@ import { MenuIsOpenOrNot } from "@/app/layout";
 
 const Navbar = () => {
   const { menuOpen, setMenuOpen } = useContext(MenuIsOpenOrNot);
-  console.log(menuOpen);
   return (
     <header>
       <div

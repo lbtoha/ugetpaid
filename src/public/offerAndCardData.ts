@@ -1,0 +1,148 @@
+import offerWall1 from "@/public/images/offer-walls-img-1.png";
+import offerWall2 from "@/public/images/offer-walls-img-2.png";
+import offerWall3 from "@/public/images/offer-walls-img-3.png";
+import offerWall4 from "@/public/images/offer-walls-img-4.png";
+import offerWall5 from "@/public/images/offer-walls-img-5.png";
+import offerWall6 from "@/public/images/offer-walls-img-6.png";
+import offerWall7 from "@/public/images/offer-walls-img-7.png";
+import offerWall8 from "@/public/images/offer-walls-img-8.png";
+import offerWall9 from "@/public/images/offer-walls-img-9.png";
+import usaFlag from "@/public/images/icon/usa-flag.png";
+
+export const offerAndCardData = [
+  {
+    id: "55801",
+    cardImage: offerWall1,
+    bonus: 50,
+    heading: "Hexagon",
+    popularity: 80,
+    countryFlag: usaFlag,
+    cardBg: "bg-gradient-offer-walls-1",
+  },
+  {
+    id: "55802",
+    cardImage: offerWall2,
+    bonus: 20,
+    heading: "Connect People",
+    countryFlag: usaFlag,
+    popularity: 60,
+    cardBg: "bg-gradient-offer-walls-2",
+  },
+  {
+    id: "558022",
+    cardImage: offerWall3,
+    bonus: 85,
+    heading: "Flamefire",
+    countryFlag: usaFlag,
+    popularity: 50,
+    cardBg: "bg-gradient-offer-walls-3",
+  },
+  {
+    id: "558052",
+    bonus: 50,
+    cardImage: offerWall4,
+    heading: "Spybats",
+    countryFlag: usaFlag,
+    popularity: 90,
+    cardBg: "bg-gradient-offer-walls-4",
+  },
+  {
+    id: "55804454",
+    cardImage: offerWall5,
+    bonus: 45,
+    heading: "Triangle",
+    countryFlag: usaFlag,
+    popularity: 40,
+    cardBg: "bg-gradient-offer-walls-2",
+  },
+  {
+    id: "55802454",
+    cardImage: offerWall6,
+    bonus: 75,
+    heading: "Spybats",
+    countryFlag: usaFlag,
+    popularity: 80,
+    cardBg: "bg-gradient-offer-walls-1",
+  },
+  {
+    id: "55802535",
+    cardImage: offerWall7,
+    bonus: 54,
+    heading: "Phoenix",
+    countryFlag: usaFlag,
+    popularity: 65,
+    cardBg: "bg-gradient-offer-walls-4",
+  },
+  {
+    id: "5580289",
+    cardImage: offerWall8,
+    bonus: 85,
+    heading: "Connect People",
+    countryFlag: usaFlag,
+    popularity: 65,
+    cardBg: "bg-gradient-offer-walls-3",
+  },
+  {
+    id: "55802754",
+    cardImage: offerWall7,
+    bonus: 52,
+    heading: "Spybats",
+    countryFlag: usaFlag,
+    popularity: 40,
+    cardBg: "bg-gradient-offer-walls-1",
+  },
+  {
+    id: "55802254",
+    cardImage: offerWall8,
+    bonus: 56,
+    heading: "Firefly",
+    countryFlag: usaFlag,
+    popularity: 41,
+    cardBg: "bg-gradient-offer-walls-3",
+  },
+  {
+    id: "55802452",
+    cardImage: offerWall9,
+    bonus: 25,
+    heading: "Circuit",
+    countryFlag: usaFlag,
+    popularity: 80,
+    cardBg: "bg-gradient-offer-walls-2",
+  },
+  {
+    id: "55802542",
+    cardImage: offerWall2,
+    bonus: 56,
+    heading: "Connect People",
+    countryFlag: usaFlag,
+    popularity: 10,
+    cardBg: "bg-gradient-offer-walls-4",
+  },
+  {
+    id: "55802542",
+    cardImage: offerWall3,
+    bonus: 55,
+    heading: "Phoenix",
+    countryFlag: usaFlag,
+    popularity: 60,
+    cardBg: "bg-gradient-offer-walls-5",
+  },
+  {
+    id: "5580254215",
+    cardImage: offerWall4,
+    bonus: 51,
+    heading: "Triangle",
+    countryFlag: usaFlag,
+    popularity: 80,
+    cardBg: "bg-gradient-offer-walls-3",
+  },
+  {
+    id: "5580254245",
+    cardImage: offerWall2,
+    bonus: 50,
+    heading: "Spybats",
+    countryFlag: usaFlag,
+    popularity: 50,
+    cardBg: "bg-gradient-offer-walls-1",
+  },
+];

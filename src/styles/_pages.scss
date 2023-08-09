@@ -1,5 +1,5 @@
 // ====== Home page =======
-// banner
+// banner section
 .banner-section {
   background-image: url(../public/images/get-paid-bg.png),
     url(../public/images/get-paid-coin.png),
@@ -9,7 +9,7 @@
   background-size: cover, auto, cover;
 }
 
-// counter
+// counter section
 .border-gradient-second {
   background: linear-gradient(#2e3549, #2e3549) padding-box,
     linear-gradient(to top left, #fe53bb, #09fbd3) border-box;
@@ -41,3 +41,67 @@
   position: relative;
   z-index: 0;
 }
+
+.faqs-section {
+  background: url(../public/images/faq-bg.png), #2e3549;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  position: relative;
+}
+
+// social section
+.social-section {
+  background: url(../public/images/social-area-bg.png), #0dce93;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+// ====== Earn page =======
+// offer section
+.featured-offer-section {
+  background-image: url(../public/images/get-paid-bg.png),
+    linear-gradient(180deg, #2e3549 0%, #2f1151 100%);
+  background-position: center;
+  border-radius: 10px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  top: 0;
+}
+
+// offer wall section rang bar
+.single-thumb {
+  .range-slider__range {
+    background: #109f5a !important;
+  }
+  .range-slider__thumb[data-lower] {
+    width: 0;
+  }
+
+  .range-slider__thumb[data-upper] {
+    width: 0;
+  }
+
+  .range-slider__range {
+    border-radius: 6px;
+  }
+}
+
+// .content-box ul li {
+//   position: relative;
+// }
+// .content-box ul li::before {
+//   position: absolute;
+//   content: "";
+//   background: #397d15;
+//   border-radius: 50%;
+//   left: 0;
+//   z-index: -1;
+//   width: 6px;
+//   z-index: 200;
+//   height: 6px;
+// }
