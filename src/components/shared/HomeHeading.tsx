@@ -1,4 +1,3 @@
-import React from "react";
 type Props = {
   subHeading: string;
   heading: string;
@@ -14,10 +13,14 @@ const HomeHeading = ({
 }: Props) => {
   return (
     <div>
-      <p className="text-2xl text-C00FF8B">{subHeading}</p>
-      <h2 className="text-4xl mt-[10px]">{heading}</h2>
+      <p className="text-lg text-C00FF8B md:text-xl xl:text-2xl">
+        {subHeading}
+      </p>
+      <h2 className="mt-[10px] text-2xl md:text-2.3xl lg:text-3xl xl:text-4xl">
+        {heading}
+      </h2>
       <p
-        className={`text-sm mt-[10px] text-CBDC4DA max-w-[${paragraphWidth}px]`}
+        className={`mt-[10px] text-sm text-CBDC4DA max-w-[${paragraphWidth}px]`}
       >
         {paragraph}
       </p>

@@ -6,7 +6,6 @@ import feature2 from "@/public/images/featured-img-2.png";
 import feature3 from "@/public/images/featured-img-3.png";
 import feature4 from "@/public/images/featured-img-4.png";
 import feature5 from "@/public/images/featured-img-5.png";
-import PrimaryButton from "../shared/PrimaryButton";
 import SecondaryButton from "../shared/SecondaryButton";
 import OutlineButton from "../shared/OutlineButton";
 import { useContext } from "react";

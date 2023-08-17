@@ -17,8 +17,32 @@ import coins from "@/public/images/icon/coin-icon.png";
 import { useContext } from "react";
 import SecondaryButton from "../shared/SecondaryButton";
 import PrimaryButton from "../shared/PrimaryButton";
+import SurveysCardDetails from "../shared/SurveysCardDetails";
 
 const FeatureOfferSurveysModal = () => {
+  const modalData = [
+    {
+      id: 545401,
+      cardImage: surveys1,
+      cardTitle: "Your Surveys",
+      detailText:
+        "You earn 6,250 points per survey and you can complete multiple surveys per day. Complete the survey until you reach the &quot;Thank you&quot; page.",
+    },
+    {
+      id: 545402,
+      cardImage: surveys2,
+      cardTitle: "CPX Research",
+      detailText:
+        "Answer profiling questions and start doing matching surveys. Check back daily for new surveys.",
+    },
+    {
+      id: 545403,
+      cardImage: surveys3,
+      cardTitle: "Speak Up",
+      detailText:
+        "Speak Up asks you a few questions and redirects you to a survey that matches your profile. You can complete multiple surveys per day with Speak Up!",
+    },
+  ];
   const { setFeatureOfferSurveysModalOpen } = useContext(ModalIsOpenOrNot);
   const handleModal = (event: React.MouseEvent) => {
     setFeatureOfferSurveysModalOpen(false);
@@ -31,7 +55,7 @@ const FeatureOfferSurveysModal = () => {
       >
         <div
           onClick={(e) => e.stopPropagation()}
-          className="bg-C3C3E5C overflow-auto p-S30 w-[1000px] rounded-[20px] fixed z-50 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          className="bg-C3C3E5C h-auto  p-S30 w-[1000px] rounded-[20px] fixed z-50 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         >
           <div className="flex items-center justify-between ">
             <div className="flex items-center gap-x-5 ">
@@ -55,154 +79,17 @@ const FeatureOfferSurveysModal = () => {
               </div>
             </div>
           </div>
-          <div className="mt-11 overflow-auto bg-C404365 border border-C575988 space-y-S10 p-S30 rounded-[15px] content-box ">
+          <div className="mt-11 bg-C404365 border max-h-[500px] overflow-auto border-C575988 space-y-S10 p-S30 rounded-[15px] content-box ">
             {/* modal items */}
 
-            <div className="p-S30 bg-C2E3549 rounded-[10px] flex items-center justify-between gap-x-[85px]">
-              <div className="flex gap-x-S30">
-                <div className="min-w-fit">
-                  <Image src={surveys1} alt="Surveys 1" />
-                </div>
-                <div>
-                  <p className="text-2xl">Your Surveys</p>
-                  <div className="flex items-center gap-x-S15 mt-S15">
-                    <div className="flex items-center rounded-[5px] bg-C1B5C4E justify-center gap-x-S5 px-S10 py-S5">
-                      <Image src={clock} alt="Clock" />
-                      <span className="text-xs">15 minutes</span>
-                    </div>
-                    <div className="flex items-center justify-center gap-x-S5 px-S10 py-S5 rounded-[5px] bg-C1B5C4E">
-                      <Image src={prize} alt="Prize" />
-                      <span className="text-xs">Exactly 6250</span>
-                      <Image src={coins} alt="Coins" />
-                    </div>
-                  </div>
-                  <p className="text-sm text-CBDC4DA mt-5">
-                    You earn 6,250 points per survey and you can complete
-                    multiple surveys per day. Complete the survey until you
-                    reach the &quot;Thank you&quot; page.
-                  </p>
-                </div>
-              </div>
-              <div className="min-w-fit">
-                <PrimaryButton buttonText="Start Earning" />
-              </div>
-            </div>
-            <div className="p-S30 bg-C2E3549 rounded-[10px] flex items-center justify-between gap-x-[85px]">
-              <div className="flex gap-x-S30">
-                <div className="min-w-fit">
-                  <Image src={surveys1} alt="Surveys 1" />
-                </div>
-                <div>
-                  <p className="text-2xl">Your Surveys</p>
-                  <div className="flex items-center gap-x-S15 mt-S15">
-                    <div className="flex items-center rounded-[5px] bg-C1B5C4E justify-center gap-x-S5 px-S10 py-S5">
-                      <Image src={clock} alt="Clock" />
-                      <span className="text-xs">15 minutes</span>
-                    </div>
-                    <div className="flex items-center justify-center gap-x-S5 px-S10 py-S5 rounded-[5px] bg-C1B5C4E">
-                      <Image src={prize} alt="Prize" />
-                      <span className="text-xs">Exactly 6250</span>
-                      <Image src={coins} alt="Coins" />
-                    </div>
-                  </div>
-                  <p className="text-sm text-CBDC4DA mt-5">
-                    You earn 6,250 points per survey and you can complete
-                    multiple surveys per day. Complete the survey until you
-                    reach the &quot;Thank you&quot; page.
-                  </p>
-                </div>
-              </div>
-              <div className="min-w-fit">
-                <PrimaryButton buttonText="Start Earning" />
-              </div>
-            </div>
-            <div className="p-S30 bg-C2E3549 rounded-[10px] flex items-center justify-between gap-x-[85px]">
-              <div className="flex gap-x-S30">
-                <div className="min-w-fit">
-                  <Image src={surveys1} alt="Surveys 1" />
-                </div>
-                <div>
-                  <p className="text-2xl">Your Surveys</p>
-                  <div className="flex items-center gap-x-S15 mt-S15">
-                    <div className="flex items-center rounded-[5px] bg-C1B5C4E justify-center gap-x-S5 px-S10 py-S5">
-                      <Image src={clock} alt="Clock" />
-                      <span className="text-xs">15 minutes</span>
-                    </div>
-                    <div className="flex items-center justify-center gap-x-S5 px-S10 py-S5 rounded-[5px] bg-C1B5C4E">
-                      <Image src={prize} alt="Prize" />
-                      <span className="text-xs">Exactly 6250</span>
-                      <Image src={coins} alt="Coins" />
-                    </div>
-                  </div>
-                  <p className="text-sm text-CBDC4DA mt-5">
-                    You earn 6,250 points per survey and you can complete
-                    multiple surveys per day. Complete the survey until you
-                    reach the &quot;Thank you&quot; page.
-                  </p>
-                </div>
-              </div>
-              <div className="min-w-fit">
-                <PrimaryButton buttonText="Start Earning" />
-              </div>
-            </div>
-            <div className="p-S30 bg-C2E3549 rounded-[10px] flex items-center justify-between gap-x-[85px]">
-              <div className="flex gap-x-S30">
-                <div className="min-w-fit">
-                  <Image src={surveys1} alt="Surveys 1" />
-                </div>
-                <div>
-                  <p className="text-2xl">Your Surveys</p>
-                  <div className="flex items-center gap-x-S15 mt-S15">
-                    <div className="flex items-center rounded-[5px] bg-C1B5C4E justify-center gap-x-S5 px-S10 py-S5">
-                      <Image src={clock} alt="Clock" />
-                      <span className="text-xs">15 minutes</span>
-                    </div>
-                    <div className="flex items-center justify-center gap-x-S5 px-S10 py-S5 rounded-[5px] bg-C1B5C4E">
-                      <Image src={prize} alt="Prize" />
-                      <span className="text-xs">Exactly 6250</span>
-                      <Image src={coins} alt="Coins" />
-                    </div>
-                  </div>
-                  <p className="text-sm text-CBDC4DA mt-5">
-                    You earn 6,250 points per survey and you can complete
-                    multiple surveys per day. Complete the survey until you
-                    reach the &quot;Thank you&quot; page.
-                  </p>
-                </div>
-              </div>
-              <div className="min-w-fit">
-                <PrimaryButton buttonText="Start Earning" />
-              </div>
-            </div>
-            <div className="p-S30 bg-C2E3549 rounded-[10px] flex items-center justify-between gap-x-[85px]">
-              <div className="flex gap-x-S30">
-                <div className="min-w-fit">
-                  <Image src={surveys1} alt="Surveys 1" />
-                </div>
-                <div>
-                  <p className="text-2xl">Your Surveys</p>
-                  <div className="flex items-center gap-x-S15 mt-S15">
-                    <div className="flex items-center rounded-[5px] bg-C1B5C4E justify-center gap-x-S5 px-S10 py-S5">
-                      <Image src={clock} alt="Clock" />
-                      <span className="text-xs">15 minutes</span>
-                    </div>
-                    <div className="flex items-center justify-center gap-x-S5 px-S10 py-S5 rounded-[5px] bg-C1B5C4E">
-                      <Image src={prize} alt="Prize" />
-                      <span className="text-xs">Exactly 6250</span>
-                      <Image src={coins} alt="Coins" />
-                    </div>
-                  </div>
-                  <p className="text-sm text-CBDC4DA mt-5">
-                    You earn 6,250 points per survey and you can complete
-                    multiple surveys per day. Complete the survey until you
-                    reach the &quot;Thank you&quot; page.
-                  </p>
-                </div>
-              </div>
-              <div className="min-w-fit">
-                <PrimaryButton buttonText="Start Earning" />
-              </div>
-            </div>
+            {modalData.map(({ id, cardImage, cardTitle, detailText }) => (
+              <SurveysCardDetails
+                key={id}
+                cardImage={cardImage}
+                cardTitle={cardTitle}
+                detailText={detailText}
+              />
+            ))}
           </div>
         </div>
       </div>

@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from "next/image";
-import React from "react";
 
 type Props = {
   iconImage: StaticImageData;
@@ -7,8 +6,12 @@ type Props = {
 
 const Icon = ({ iconImage }: Props) => {
   return (
-    <div className="border-gradient rounded-full h-fit items-center justify-center flex p-5 min-h-[80px] min-w-[80px] w-fit ">
-      <Image src={iconImage} alt="Icon image" />
+    <div className="border-gradient flex h-fit min-h-[60px] w-fit min-w-[60px] items-center justify-center rounded-full p-3 xl:min-h-[80px] xl:min-w-[80px] xl:p-5 ">
+      <Image
+        src={iconImage}
+        alt="Icon image"
+        className="xl:min-h-10  xl:min-w-10 min-h-[30px] min-w-[30px]"
+      />
     </div>
   );
 };

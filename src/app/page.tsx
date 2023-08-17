@@ -1,27 +1,23 @@
-import Banner from "@/components/home/GetPaid";
-import Counter from "@/components/home/Counter";
-import FAQs from "@/components/home/FAQs";
-import HowGetPaid from "@/components/home/HowGetPaid";
-import LatestActive from "@/components/home/LatestActive";
-import SocialSection from "@/components/shared/SocialSection";
-import { StartEarning } from "@/components/home/StartEarning";
-import TopPlayingSurvey from "@/components/home/TopPlayingSurvay";
-import WhatPeople from "@/components/home/WhatPeople";
-import React from "react";
-import GetPaid from "@/components/home/GetPaid";
+import Counter from "@/components/pages/home/Counter";
+import FAQs from "@/components/pages/home/FAQs";
+import GetPaid from "@/components/pages/home/GetPaid";
+import HowGetPaid from "@/components/pages/home/HowGetPaid";
+import LatestActiveSlider from "@/components/pages/home/LatestActiveSlider";
+import TopPlayingSurvey from "@/components/pages/home/TopPlayingSurvay";
+import WhatPeople from "@/components/pages/home/WhatPeople";
 
 const Home = () => {
   return (
     <>
-      <LatestActive />
+      <LatestActiveSlider />
       <GetPaid />
       <Counter />
       <HowGetPaid />
       <TopPlayingSurvey />
       <FAQs />
       <WhatPeople />
-      <StartEarning />
-      <SocialSection />
+      {/* <StartEarning /> */}
+      {/* <SocialSection /> */}
     </>
   );
 };

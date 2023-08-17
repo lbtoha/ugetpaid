@@ -9,11 +9,13 @@ type Props = {
 const PageNavigationHeader = ({ title, items }: Props) => {
   return (
     <div className="flex items-center justify-between bg-C2E3549 p-S30">
-      <p className="text-[48px] font-semibold capitalize text-white md:text-[50px] lg:text-[64px]">
-        {title}
-      </p>
+      <div>
+        <h2 className="text-[48px] font-semibold capitalize text-white md:text-[50px] leading-[130%] lg:text-[64px]">
+          {title}
+        </h2>
+      </div>
       <div className="flex items-center">
-        <ul className="align-items-center flex gap-x-2 max-sm:text-base">
+        <ul className="align-items-center flex gap-x-2 max-sm:text-base text-CBBC2FA">
           {items.map((item, i) => (
             <React.Fragment key={item}>
               <li>
@@ -29,9 +31,9 @@ const PageNavigationHeader = ({ title, items }: Props) => {
                 </a>
               </li>
               {i !== items.length - 1 && (
-                <li className="text-white">
+                <li>
                   <span className="material-symbols-outlined">
-                    arrow_forward
+                    chevron_right
                   </span>
                 </li>
               )}

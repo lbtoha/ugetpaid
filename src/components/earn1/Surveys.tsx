@@ -15,15 +15,13 @@ import React, { useContext, useState } from "react";
 import { offerAndCardData } from "@/public/offerAndCardData";
 import OfferPageSectionHeading from "../shared/OfferPageSectionHeading";
 import { ModalIsOpenOrNot } from "@/app/layout";
+import Link from "next/link";
 
 const Surveys = () => {
   const sliceData = offerAndCardData.slice(0, 4);
   const [showData, setShowData] = useState(sliceData);
   const { setFeatureOfferSurveysModalOpen } = useContext(ModalIsOpenOrNot);
 
-  const handleClick = () => {
-    setShowData(offerAndCardData);
-  };
   return (
     <section className="section-gap">
       <div className="border border-C535E7C rounded-[10px] px-S15 pt-S120 pb-S80">
@@ -63,8 +61,13 @@ const Surveys = () => {
             showData.length == offerAndCardData.length && "hidden"
           }`}
         >
-          <div onClick={handleClick}>
-            <SecondaryButton buttonText="View all Surveys" />
+          <div>
+            <Link
+              href="/earn1/surveys"
+              className="cursor-pointer  font-bold text-C282F41 text-sm shadow-[0px 4px 16px 0px rgba(0, 0, 0, 0.25)]  bg-C09B65E px-5 py-[10px] w-fit rounded-xl"
+            >
+              <span>View all Surveys</span>
+            </Link>
           </div>
         </div>
       </div>

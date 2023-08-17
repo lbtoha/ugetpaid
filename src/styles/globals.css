@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: green;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.sidebar-menu::-webkit-scrollbar {
+  display: none;
+}
+
 input {
   width: 100%;
   outline: none;
@@ -9,7 +32,7 @@ input {
 
 @layer components {
   .section-gap {
-    @apply pt-[120px];
+    @apply pt-[60px] lg:pt-[80px] xl:pt-[120px];
   }
 
   .padding-top-120 {

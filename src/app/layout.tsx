@@ -1,21 +1,25 @@
 "use client";
-import { Inter, Jost } from "next/font/google";
-import "@/styles/globals.css";
-import "@/styles/fontawesome.min.css";
 import "@/styles/arafat-font.css";
+import "@/styles/fontawesome.min.css";
+import "@/styles/globals.css";
 import "material-symbols";
+import { Inter, Jost } from "next/font/google";
 import { Suspense, createContext, useState } from "react";
 // import ScrollBackToTop from "@/components/scrollBackToTop/ScrollBackToTop";
 import Loading from "./loading";
 // import "material-symbols";
-import { Metadata } from "next";
-import Navbar from "@/components/shared/Navbar";
+import FeatureOfferSurveysModal from "@/components/earn1/FeatureOfferSurveysModal";
+import FeaturedOfferModal from "@/components/earn1/FeaturedOfferModal";
+import WithdrawModal from "@/components/pages/cashOut/WithdrawModal";
+import LeaderBoardModal from "@/components/pages/leaderboard/LeaderboardTopEarners/LeaderBoardModal";
+import OfferWallPageModal from "@/components/pages/offerwalls/OfferWallPageModal";
+import Footer from "@/components/shared/Footer";
+import Navbar from "@/components/shared/navbar/Navbar";
 import "@/styles/main.scss";
 import "@smastrom/react-rating/style.css";
-import "swiper/css";
-import Footer from "@/components/shared/Footer";
-import FeaturedOfferModal from "@/components/earn1/FeaturedOfferModal";
-import FeatureOfferSurveysModal from "@/components/earn1/FeatureOfferSurveysModal";
+import { Metadata } from "next";
+import "react-range-slider-input/dist/style.css";
+import "swiper/css/bundle";
 
 const inter = Inter({ subsets: ["latin"], variable: "--body-font" });
 const jost = Jost({
@@ -40,6 +44,15 @@ interface ModalContextValue {
   setFeatureOfferSurveysModalOpen: React.Dispatch<
     React.SetStateAction<boolean>
   >;
+
+  offerWallsOpen: boolean;
+  setOfferWallOpen: React.Dispatch<React.SetStateAction<boolean>>;
+
+  cashOutModalOpen: boolean;
+  setCashOutModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
+
+  leaderBoardModalOpen: boolean;
+  setLeaderBoardModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 // menu default value for the context (empty object)
@@ -52,13 +65,23 @@ const defaultMenuContextValue: MenuContextValue = {
 const defaultModalContextValue: ModalContextValue = {
   featureOfferModalOpen: false,
   setFeatureOfferModalOpen: () => {},
+
   featureOfferSurveysModalOpen: false,
   setFeatureOfferSurveysModalOpen: () => {},
+
+  offerWallsOpen: false,
+  setOfferWallOpen: () => {},
+
+  cashOutModalOpen: false,
+  setCashOutModalOpen: () => {},
+
+  leaderBoardModalOpen: false,
+  setLeaderBoardModalOpen: () => {},
 };
 
 // context with the defined type and default value
 export const MenuIsOpenOrNot = createContext<MenuContextValue>(
-  defaultMenuContextValue
+  defaultMenuContextValue,
 );
 
 export const ModalIsOpenOrNot = createContext(defaultModalContextValue);
@@ -72,11 +95,14 @@ export default function RootLayout({
   const [featureOfferModalOpen, setFeatureOfferModalOpen] = useState(false);
   const [featureOfferSurveysModalOpen, setFeatureOfferSurveysModalOpen] =
     useState(false);
+  const [offerWallsOpen, setOfferWallOpen] = useState(false);
+  const [cashOutModalOpen, setCashOutModalOpen] = useState(false);
+  const [leaderBoardModalOpen, setLeaderBoardModalOpen] = useState(false);
 
   return (
     <html lang="en">
       <body
-        className={`relative ${jost.variable} ${inter.variable}  relative font-inter text-base text-CFFFFFF bg-C1A1F2C`}
+        className={`relative ${jost.variable} ${inter.variable} relative bg-C1A1F2C  font-inter text-base text-CFFFFFF `}
       >
         <ModalIsOpenOrNot.Provider
           value={{
@@ -84,15 +110,21 @@ export default function RootLayout({
             setFeatureOfferModalOpen,
             featureOfferSurveysModalOpen,
             setFeatureOfferSurveysModalOpen,
+            offerWallsOpen,
+            setOfferWallOpen,
+            cashOutModalOpen,
+            setCashOutModalOpen,
+            leaderBoardModalOpen,
+            setLeaderBoardModalOpen,
           }}
         >
           <MenuIsOpenOrNot.Provider value={{ menuOpen, setMenuOpen }}>
             <Navbar />
             <div
-              className={`pl-5 pr-5 pt-[100px] ${
+              className={`custom-transition px-2 pt-20 sm:px-5 md:pt-[100px] ${
                 menuOpen
-                  ? "md:w-[calc(100%-240px)] md:ml-[240px]"
-                  : "md:w-[calc(100%-150px)] md:ml-[150px]"
+                  ? "md:ml-[240px] md:w-[calc(100%-240px)]"
+                  : "md:ml-[150px] md:w-[calc(100%-150px)]"
               }`}
             >
               <Suspense fallback={<Loading />}>{children}</Suspense>
@@ -102,6 +134,9 @@ export default function RootLayout({
           </MenuIsOpenOrNot.Provider>
           {featureOfferSurveysModalOpen && <FeatureOfferSurveysModal />}
           {featureOfferModalOpen && <FeaturedOfferModal />}
+          {offerWallsOpen && <OfferWallPageModal />}
+          {cashOutModalOpen && <WithdrawModal />}
+          {leaderBoardModalOpen && <LeaderBoardModal />}
         </ModalIsOpenOrNot.Provider>
       </body>
     </html>
