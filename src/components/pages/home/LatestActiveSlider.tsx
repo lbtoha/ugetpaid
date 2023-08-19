@@ -5,6 +5,7 @@ import "swiper/css/autoplay";
 import "swiper/css/free-mode";
 import { Autoplay, FreeMode } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { v4 as uuidv4 } from "uuid";
 
 const LatestActiveSlider = () => {
   return (
@@ -44,7 +45,7 @@ const LatestActiveSlider = () => {
     >
       {latestActiveSliderData.map(
         ({ id, thumbnail, offerWall, offerName, reward }) => (
-          <SwiperSlide key={id}>
+          <SwiperSlide key={uuidv4()}>
             <div className="">
               <div className="flex items-center justify-between gap-x-2 rounded-xl bg-C333A4E px-[10px] py-[15px]">
                 <div>

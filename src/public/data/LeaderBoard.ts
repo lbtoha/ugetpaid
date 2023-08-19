@@ -51,7 +51,7 @@ export const leaderListData = [
   },
   {
     image: leaderList4,
-    name: "beautifulbutterfly101",
+    name: "butterfly101",
     point: 696445,
     bonus: 45000,
     coin: 10000,

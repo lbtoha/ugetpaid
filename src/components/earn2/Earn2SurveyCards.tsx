@@ -1,11 +1,10 @@
-import React from "react";
-import BigCard from "../shared/BigCard";
 import watchVideo1 from "@/public/images/icon/watch-videos-icon-1.png";
 import watchVideo2 from "@/public/images/icon/watch-videos-icon-2.png";
 import watchVideo3 from "@/public/images/icon/watch-videos-icon-3.png";
 import watchVideo4 from "@/public/images/icon/watch-videos-icon-4.png";
 import watchVideo5 from "@/public/images/icon/watch-videos-icon-5.png";
 import watchVideo6 from "@/public/images/icon/watch-videos-icon-6.png";
+import BigCard from "../shared/BigCard";
 
 const Earn2SurveyCards = () => {
   const Earn2CardData = [
@@ -53,8 +52,8 @@ const Earn2SurveyCards = () => {
     },
   ];
   return (
-    <div className="section-gap">
-      <div className="grid grid-cols-3 items-stretch justify-between gap-x-6 gap-y-6">
+    <div className="mt-4 md:mt-7 xl:mt-10">
+      <div className="grid grid-cols-1 items-stretch justify-between gap-5 sm:grid-cols-2 xl:grid-cols-3 xl:gap-6">
         {Earn2CardData.map(
           ({ id, cardImage, cardHeading, cardText, btnText }) => (
             <BigCard
@@ -64,7 +63,7 @@ const Earn2SurveyCards = () => {
               cardText={cardText}
               btnText={btnText}
             />
-          )
+          ),
         )}
       </div>
     </div>

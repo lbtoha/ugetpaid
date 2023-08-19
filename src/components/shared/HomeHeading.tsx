@@ -1,8 +1,8 @@
 type Props = {
   subHeading: string;
   heading: string;
-  paragraph: string;
-  paragraphWidth: number;
+  paragraph?: string;
+  paragraphWidth?: number;
 };
 
 const HomeHeading = ({

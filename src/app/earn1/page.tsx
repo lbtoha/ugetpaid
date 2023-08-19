@@ -2,7 +2,7 @@ import FeaturedOffer from "@/components/earn1/FeaturedOffer";
 import OfferWall from "@/components/earn1/OfferWall";
 import Surveys from "@/components/earn1/Surveys";
 import WatchVideo from "@/components/earn1/WatchVideo";
-import LatestActive from "@/components/pages/home/LatestActive";
+import LatestActiveSlider from "@/components/pages/home/LatestActiveSlider";
 import SocialSection from "@/components/shared/SocialSection";
 import { Metadata } from "next";
 
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const Earn1 = () => {
   return (
     <>
-      <LatestActive />
+      <LatestActiveSlider />
       <FeaturedOffer />
       <OfferWall />
       <Surveys />

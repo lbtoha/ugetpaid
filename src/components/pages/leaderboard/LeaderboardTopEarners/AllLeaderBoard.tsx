@@ -9,7 +9,7 @@ const AllLeaderBoard = () => {
   const { setLeaderBoardModalOpen } = useContext(ModalIsOpenOrNot);
   return (
     <div className="mt-10">
-      <div className="flex justify-between gap-x-10">
+      <div className="grid grid-cols-1 justify-between gap-7 sm:grid-cols-2 xl:grid-cols-3 xl:gap-10">
         {crownCardData.map(({ image, name, point, bonus, coin, position }) => (
           <React.Fragment key={uuidv4()}>
             <LeaderBoardCrownCard
@@ -38,48 +38,48 @@ const AllLeaderBoard = () => {
           </div>
         ))}
       </div>
-      <div className="justify-center items-center mt-S60 gap-2.5 flex ">
-        <div className="p-[15px] cursor-pointer bg-C00FF8B rounded-[15px] flex-col justify-center items-center gap-2.5 inline-flex">
-          <div className="text-center text-C1A1F2C text-base font-bold leading-normal">
+      {/* <div className="mt-S60 flex items-center justify-center gap-2.5 ">
+        <div className="inline-flex cursor-pointer flex-col items-center justify-center gap-2.5 rounded-[15px] bg-C00FF8B p-[15px]">
+          <div className="text-center text-base font-bold leading-normal text-C1A1F2C">
             01
           </div>
         </div>
-        <div className="p-[15px] bg-C2C3346 hover:bg-C00FF8B hover:text-C1A1F2C cursor-pointer rounded-[15px] flex-col justify-center items-center gap-2.5 inline-flex">
+        <div className="inline-flex cursor-pointer flex-col items-center justify-center gap-2.5 rounded-[15px] bg-C2C3346 p-[15px] hover:bg-C00FF8B hover:text-C1A1F2C">
           <div className="text-center text-base font-bold leading-normal">
             02
           </div>
         </div>
-        <div className="p-[15px] bg-C2C3346 hover:bg-C00FF8B hover:text-C1A1F2C cursor-pointer rounded-[15px] flex-col justify-center items-center gap-2.5 inline-flex">
+        <div className="inline-flex cursor-pointer flex-col items-center justify-center gap-2.5 rounded-[15px] bg-C2C3346 p-[15px] hover:bg-C00FF8B hover:text-C1A1F2C">
           <div className="text-center text-base font-bold leading-normal">
             03
           </div>
         </div>
-        <div className="p-[15px] bg-C2C3346 hover:bg-C00FF8B hover:text-C1A1F2C cursor-pointer rounded-[15px] flex-col justify-center items-center gap-2.5 inline-flex">
+        <div className="inline-flex cursor-pointer flex-col items-center justify-center gap-2.5 rounded-[15px] bg-C2C3346 p-[15px] hover:bg-C00FF8B hover:text-C1A1F2C">
           <div className="text-center text-base font-bold leading-normal">
             04
           </div>
         </div>
-        <div className="p-[15px] bg-C2C3346 hover:bg-C00FF8B hover:text-C1A1F2C cursor-pointer rounded-[15px] flex-col justify-center items-center gap-2.5 inline-flex">
+        <div className="inline-flex cursor-pointer flex-col items-center justify-center gap-2.5 rounded-[15px] bg-C2C3346 p-[15px] hover:bg-C00FF8B hover:text-C1A1F2C">
           <div className="text-center text-base font-bold leading-normal">
             05
           </div>
         </div>
-        <div className="p-[15px] bg-C2C3346 hover:bg-C00FF8B hover:text-C1A1F2C cursor-pointer rounded-[15px] flex-col justify-center items-center gap-2.5 inline-flex">
+        <div className="inline-flex cursor-pointer flex-col items-center justify-center gap-2.5 rounded-[15px] bg-C2C3346 p-[15px] hover:bg-C00FF8B hover:text-C1A1F2C">
           <div className="text-center text-base font-bold leading-normal">
             06
           </div>
         </div>
-        <div className="p-[15px] bg-C2C3346 hover:bg-C00FF8B hover:text-C1A1F2C cursor-pointer rounded-[15px] flex-col justify-center items-center gap-2.5 inline-flex">
+        <div className="inline-flex cursor-pointer flex-col items-center justify-center gap-2.5 rounded-[15px] bg-C2C3346 p-[15px] hover:bg-C00FF8B hover:text-C1A1F2C">
           <div className="text-center text-base font-bold leading-normal">
             07
           </div>
         </div>
-        <div className="p-[15px] bg-C2C3346 hover:bg-C00FF8B hover:text-C1A1F2C cursor-pointer rounded-[15px] flex-col justify-center items-center gap-2.5 inline-flex">
+        <div className="inline-flex cursor-pointer flex-col items-center justify-center gap-2.5 rounded-[15px] bg-C2C3346 p-[15px] hover:bg-C00FF8B hover:text-C1A1F2C">
           <div className="text-center text-base font-bold leading-normal">
             08
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

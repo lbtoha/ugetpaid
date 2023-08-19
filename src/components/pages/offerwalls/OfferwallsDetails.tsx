@@ -1,6 +1,4 @@
 "use client";
-import React, { useState } from "react";
-import OfferWallsSideCard from "./OfferwallsSideCard";
 import {
   categoryArray,
   deviceArray,
@@ -8,9 +6,11 @@ import {
   orderByArray,
   sideCardData,
 } from "@/public/data/offerWallPage";
-import OfferPageDropdown from "./OfferPageDropdown";
+import { useState } from "react";
 import { countryByArray } from "../../../public/data/offerWallPage";
+import OfferPageDropdown from "./OfferPageDropdown";
 import OfferWallCardDetails from "./OfferWallCardDetails";
+import OfferWallsSidebar from "./OfferWallsSidebar";
 
 const OfferwallsDetails = () => {
   const [filterData, setFilterData] = useState(offerWallCardData);
@@ -19,7 +19,7 @@ const OfferwallsDetails = () => {
   const handleFilterCategory = (filterText: string) => {
     const result = offerWallCardData.filter(
       (filterItem) =>
-        filterItem.category.toLowerCase() == filterText.toLowerCase()
+        filterItem.category.toLowerCase() == filterText.toLowerCase(),
     );
     setFilterData(result);
   };
@@ -28,7 +28,7 @@ const OfferwallsDetails = () => {
   const handleFilterSort = (filterText: string) => {
     const result = offerWallCardData.filter(
       (filterItem) =>
-        filterItem.orderBy.toLowerCase() == filterText.toLowerCase()
+        filterItem.orderBy.toLowerCase() == filterText.toLowerCase(),
     );
     setFilterData(result);
   };
@@ -37,7 +37,7 @@ const OfferwallsDetails = () => {
   const handleFilterDevice = (filterText: string) => {
     const result = offerWallCardData.filter(
       (filterItem) =>
-        filterItem.device.toLowerCase() == filterText.toLowerCase()
+        filterItem.device.toLowerCase() == filterText.toLowerCase(),
     );
     setFilterData(result);
   };
@@ -46,41 +46,25 @@ const OfferwallsDetails = () => {
   const handleFilterCountry = (filterText: string) => {
     const result = offerWallCardData.filter(
       (filterItem) =>
-        filterItem.country.toLowerCase() == filterText.toLowerCase()
+        filterItem.country.toLowerCase() == filterText.toLowerCase(),
     );
     setFilterData(result);
   };
 
   return (
-    <div className="grid grid-cols-12 space-x-6 mt-6">
-      <div className="col-start-1 col-end-4">
-        <div className="bg-C2E3549 rounded-[10px]  p-5 ">
-          <p className="text-2.3xl text-center">Offerwalls</p>
-          <p className="text-sm text-CBDC4DA mt-S10 text-center pb-5">
-            Each Offer Wall contains hundreds of tasks to complete. Choose from
-            one of them to start earning coins.
-          </p>
-          <div className="">
-            {sideCardData.map(
-              ({ id, cardImage, top, heading, popularity, countryFlag }) => (
-                <OfferWallsSideCard
-                  key={id}
-                  cardImage={cardImage}
-                  top={top}
-                  heading={heading}
-                  countryFlag={countryFlag}
-                  popularity={popularity}
-                />
-              )
-            )}
-          </div>
-        </div>
+    <div className="mt-6 grid grid-cols-12 max-xl:space-y-5 md:max-xl:space-y-6 xl:space-x-6">
+      <div className="col-start-1 col-end-13 xl:col-end-4">
+        <OfferWallsSidebar
+          sectionTitle="Offerwalls"
+          sectionDescription="Each Offer Wall contains hundreds of tasks to complete. Choose from one of them to start earning coins."
+          sideCardData={sideCardData}
+        />
       </div>
-      <div className="col-start-4 col-end-13">
-        <div className="bg-C1B5C4E p-S30 rounded-[15px] pb-5">
-          <h2 className="text-2.3xl pb-5">Hexagon Rewards</h2>
-          <div className="pt-10 border-t border-C267967 flex justify-between">
-            <div className="flex justify-start items-center gap-x-[15px]">
+      <div className="col-start-1 col-end-13 xl:col-start-4">
+        <div className="rounded-[15px] bg-C1B5C4E p-S30 pb-5">
+          <h2 className="pb-5 text-2.3xl">Hexagon Rewards</h2>
+          <div className="flex justify-between border-t border-C267967 pt-10">
+            <div className="flex items-center justify-start gap-[15px] max-3xl:flex-wrap">
               {/* dropdown section start */}
               <OfferPageDropdown
                 filterFunction={handleFilterCategory}
@@ -102,9 +86,9 @@ const OfferwallsDetails = () => {
               />
               {/* dropdown section end */}
             </div>
-            <button className="bg-C298470 px-5 py-S10 rounded-[5px] text-center flex  items-center gap-x-S5">
+            <button className="flex h-fit items-center gap-x-S5 rounded-[5px] bg-C298470 px-5 py-S10 text-center max-sm:hidden">
               <span>
-                <span className="material-symbols-outlined bg-C2DAB90 p-1 rounded-full">
+                <span className="material-symbols-outlined rounded-full bg-C2DAB90 p-1">
                   question_mark
                 </span>
               </span>
@@ -112,7 +96,7 @@ const OfferwallsDetails = () => {
             </button>
           </div>
         </div>
-        <div className="mt-S30 space-y-6">
+        <div className="mt-5 space-y-5 xl:mt-S30 xl:space-y-6">
           {filterData.map(
             ({ id, cardImage, cardTitle, detailText, offerPoint }) => (
               <OfferWallCardDetails
@@ -122,7 +106,7 @@ const OfferwallsDetails = () => {
                 detailText={detailText}
                 offerPoint={offerPoint}
               />
-            )
+            ),
           )}
         </div>
       </div>

@@ -1,7 +1,6 @@
 import AllSurveys from "@/components/pages/surveys/AllSurveys";
 import PageNavigationHeader from "@/components/shared/PageNavigationHeader";
 import SocialSection from "@/components/shared/SocialSection";
-import Tips from "@/components/shared/SurveysTips";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -26,7 +25,7 @@ const Page = () => {
         title="Surveys"
         items={["Home", "Earn", "Surveys"]}
       />
-      <Tips title="Tips for answering surveys" tipsList={tipsList} />
+      {/* <Tips title="Tips for answering surveys" tipsList={tipsList} /> */}
       <AllSurveys />
       <SocialSection />
     </>

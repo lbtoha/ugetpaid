@@ -4,6 +4,7 @@ import howWork2 from "@/public/images/how-works-img-2.png";
 import howWork3 from "@/public/images/how-works-img-3.png";
 import { Tab } from "@headlessui/react";
 import { Fragment } from "react";
+import { v4 as uuidv4 } from "uuid";
 import HomeHeading from "../../shared/HomeHeading";
 import HowGetPaidImage from "./HowGetPaidImage";
 
@@ -38,7 +39,7 @@ const HowGetPaid = () => {
           <div className="grid-cols-12 items-center lg:grid">
             <Tab.List className="col-span-5 space-y-5 pt-[40px]">
               {chooseTaskData.map(({ id, number, heading }) => (
-                <Tab key={id} as={Fragment}>
+                <Tab key={uuidv4()} as={Fragment}>
                   {({ selected }) => (
                     <div
                       className={`group custom-transition-fade w-full  rounded-xl border border-C2E3549 hover:bg-C185330 ${

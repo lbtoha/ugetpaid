@@ -3,24 +3,16 @@ import { whatPeopleCardData } from "@/public/data/home";
 import quotation from "@/public/images/icon/quotation.png";
 import { Rating } from "@smastrom/react-rating";
 import Image from "next/image";
-import { useLayoutEffect, useRef, useState } from "react";
+import { useState } from "react";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { v4 as uuidv4 } from "uuid";
 import HomeHeading from "../../shared/HomeHeading";
 
 const WhatPeople = () => {
   const [rating, setRating] = useState(0); // Initial value
-  const ref = useRef(null);
 
-  const [width, setWidth] = useState(0);
-  const [height, setHeight] = useState(0);
-
-  useLayoutEffect(() => {
-    setWidth(ref?.current?.offsetWidth);
-    // setHeight(ref.current.offsetHeight);
-  }, []);
-  console.log(width);
   return (
     <section className="section-gap">
       <div className="mx-auto max-w-[615px] text-center">
@@ -72,11 +64,10 @@ const WhatPeople = () => {
               heading,
               paragraph,
               rating,
-
               ratingTime,
             }) => (
               <SwiperSlide
-                key={id}
+                key={uuidv4()}
                 className="relative rounded-[15px] bg-C2E3549 px-S15 py-10 xl:px-S30 "
               >
                 <div className="flex items-center gap-x-5">
@@ -91,15 +82,8 @@ const WhatPeople = () => {
                   </div>
                 </div>
                 <div>
-                  <p
-                    className="mt-6 text-2xl xl:text-2.3xl"
-                    title={heading}
-                    ref={ref}
-                  >
-                    {heading.length > 18
-                      ? heading.substring(0, 17) + "..."
-                      : heading}
-                    {parent.innerWidth}
+                  <p className="mt-6 text-2xl xxl:text-2.3xl" title={heading}>
+                    {heading}
                   </p>
                   <p className="mt-1 border-b border-b-C626F95 pb-6 text-base text-CBDC4DA xl:mt-S15 xl:text-lg">
                     {paragraph.length > 70

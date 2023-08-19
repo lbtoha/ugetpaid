@@ -18,27 +18,31 @@ const LeaderBoardList = ({
   position,
 }: Props) => {
   return (
-    <div className="px-10 py-5 border border-C3D4660 bg-C1F2432 rounded-[20px]  grid grid-cols-4 justify-between items-center">
-      <div className="space-x-S60 flex">
-        <p className="px-S10 py-S15 bg-C2C3346 rounded-[15px] flex items-center text-center">
+    <div className="grid-cols-2 items-center justify-between gap-10 rounded-[20px] border border-C3D4660 bg-C1F2432 px-5 py-5 max-xl:flex-wrap max-lg:space-y-4 lg:grid xl:px-10">
+      <div className="flex space-x-S30 xl:space-x-S60">
+        <p className="flex items-center rounded-[15px] bg-C2C3346 px-S10 py-S15 text-center">
           {position}
         </p>
         <div className="flex items-center gap-x-5">
           <Image src={image} alt="Table image" />
-          <p className="text-2xl">{name}</p>
+          <div>
+            <p className="text-lg sm:text-2xl">{name}</p>
+          </div>
         </div>
       </div>
-      <div className="text-center">
-        <p className="font-bold">{point}</p>
-        <p className="text-C00FF8B text-xs leading-[150%]">Point</p>
-      </div>
-      <div className="text-center">
-        <p className="font-bold">{coin}</p>
-        <p className="text-C00FF8B text-xs leading-[150%]">Coins</p>
-      </div>
-      <div className="text-center">
-        <p className="font-bold">{bonus}</p>
-        <p className="text-C00FF8B text-xs leading-[150%]">Bonus</p>
+      <div className="flex justify-between">
+        <div className="text-center">
+          <p className="font-bold">{point}</p>
+          <p className="text-xs leading-[150%] text-C00FF8B">Point</p>
+        </div>
+        <div className="text-center">
+          <p className="font-bold">{coin}</p>
+          <p className="text-xs leading-[150%] text-C00FF8B">Coins</p>
+        </div>
+        <div className="text-center">
+          <p className="font-bold">{bonus}</p>
+          <p className="text-xs leading-[150%] text-C00FF8B">Bonus</p>
+        </div>
       </div>
     </div>
   );

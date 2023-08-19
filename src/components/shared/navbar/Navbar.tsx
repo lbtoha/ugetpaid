@@ -15,7 +15,6 @@ const Navbar = () => {
     const scrollY = window.scrollY;
     setScrollHight(scrollY);
   };
-  console.log(scrollHight);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);

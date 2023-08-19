@@ -1,5 +1,3 @@
-import Image from "next/image";
-import React from "react";
 import watchVideo1 from "@/public/images/icon/watch-videos-icon-1.png";
 import watchVideo2 from "@/public/images/icon/watch-videos-icon-2.png";
 import watchVideo3 from "@/public/images/icon/watch-videos-icon-3.png";
@@ -31,7 +29,7 @@ const WatchVideo = () => {
   ];
   return (
     <div className="section-gap">
-      <div className="grid grid-cols-3 items-stretch justify-between gap-x-6">
+      <div className="grid grid-cols-1 items-stretch justify-center gap-5 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 xxl:gap-x-6">
         {watchVideoData.map(
           ({ id, cardImage, cardHeading, cardText, btnText }) => (
             <BigCard
@@ -41,7 +39,7 @@ const WatchVideo = () => {
               cardText={cardText}
               btnText={btnText}
             />
-          )
+          ),
         )}
       </div>
     </div>

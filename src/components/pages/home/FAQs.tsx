@@ -4,6 +4,7 @@ import fatIcon from "@/public/images/icon/faq-icon.png";
 import Image from "next/image";
 import { useState } from "react";
 import AnimateHeight from "react-animate-height";
+import { v4 as uuidv4 } from "uuid";
 import HomeHeading from "../../shared/HomeHeading";
 
 const FAQs = () => {
@@ -27,10 +28,10 @@ const FAQs = () => {
         </div>
         <div className="mx-auto mt-7 max-w-[1080px] sm:mt-10 lg:mt-S60 xl:mt-S80">
           {faqsData.map(({ id, question, answer }) => (
-            <div key={id} className="mb-2 lg:mb-4 xl:mb-5">
+            <div key={uuidv4()} className="mb-2 lg:mb-4 xl:mb-5">
               <div
                 className="mb-[1px] flex w-full cursor-pointer items-center justify-between  rounded-tl-xl rounded-tr-xl bg-C3E4762 p-S15 text-left text-base sm:p-5 md:p-6 md:text-lg lg:p-7 xl:p-S30 xl:text-[20px]"
-                key={id}
+                key={uuidv4()}
                 onClick={() => setOpen((p) => (id == p ? null : id))}
               >
                 <div className="flex items-center gap-x-4 sm:gap-x-5">

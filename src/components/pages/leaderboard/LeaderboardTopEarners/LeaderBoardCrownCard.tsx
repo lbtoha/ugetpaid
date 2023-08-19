@@ -24,29 +24,30 @@ const LeaderBoardCrownCard = ({
   return (
     <div
       onClick={() => setLeaderBoardModalOpen(true)}
-      className="px-S30 pt-[100px] pb-S60 relative w-full bg-C1F2432 border border-C3D4660 rounded-[15px]"
+      className="relative w-full rounded-[15px] border border-C3D4660 bg-C1F2432 px-S30 pb-S60 pt-[100px]"
     >
-      <ProfileImageBig image={image} />
-      <div className="flex justify-between">
-        <Image src={crown} alt="Crown" className="absolute top-[60px] " />
+      <div className="flex justify-center ">
+        <Image src={crown} alt="Crown" />
       </div>
-      <p className="text-2xl text-center mt-S15">{name}</p>
-      <p className="mt-S5 text-C00FF8B font-semibold text-center">
+      <ProfileImageBig image={image} />
+
+      <p className="mt-S15 text-center text-2xl">{name}</p>
+      <p className="mt-S5 text-center font-semibold text-C00FF8B">
         {point} Points
       </p>
-      <div className="flex justify-between mt-10">
-        <div className="border-e border-CD7D6D6 grow  ">
-          <p className="text-xl text-center ">{coin}</p>
-          <p className="text-C00FF8B mt-S5 text-center">Coins</p>
+      <div className="mt-10 flex justify-between">
+        <div className="grow border-e border-CD7D6D6  ">
+          <p className="text-center text-xl ">{coin}</p>
+          <p className="mt-S5 text-center text-C00FF8B">Coins</p>
         </div>
         <div className="grow">
-          <p className="text-xl text-center">+{bonus}</p>
-          <p className="text-C00FF8B mt-S5 text-center">Bonus</p>
+          <p className="text-center text-xl">+{bonus}</p>
+          <p className="mt-S5 text-center text-C00FF8B">Bonus</p>
         </div>
       </div>
-      <div className="bg-C00FF8B pt-S30 px-S10 pb-5 absolute right-[20px] rounded-br-[30px] top-0 rounded-bl-[30px]">
-        <p className="text-C1A1F2C text-xl text-center">{position}</p>
-        <p className="text-C1A1F2C text-xs text-center">Place</p>
+      <div className="absolute right-[20px] top-0 rounded-bl-[30px] rounded-br-[30px] bg-C00FF8B px-S10 pb-5 pt-S30">
+        <p className="text-center text-xl text-C1A1F2C">{position}</p>
+        <p className="text-center text-xs text-C1A1F2C">Place</p>
       </div>
     </div>
   );

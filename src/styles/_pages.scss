@@ -81,11 +81,23 @@
     linear-gradient(180deg, #2e3549 0%, #2f1151 100%);
   background-position: center;
   border-radius: 10px;
-  height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   top: 0;
+}
+@media (min-width: 1800px) {
+  .featured-offer-section {
+    background-image: url(../public/images/get-paid-bg.png),
+      linear-gradient(180deg, #2e3549 0%, #2f1151 100%);
+    background-position: center;
+    border-radius: 10px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    top: 0;
+  }
 }
 
 // offer wall section rang bar

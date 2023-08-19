@@ -215,7 +215,7 @@ export const whatPeopleCardData = [
     image: activeImage2,
     name: "Alice Smith",
     country: "Vietnam",
-    heading: "“Excellent survey panel”",
+    heading: "“Excellent survey”",
     paragraph:
       "Excellent survey panel I am always waiting for the task Thank you so much",
     rating: 4,
@@ -226,7 +226,7 @@ export const whatPeopleCardData = [
     image: activeImage3,
     name: "Sophia Miller",
     country: "Canada",
-    heading: "“Reputable survey site.”",
+    heading: "“Reputable survey”",
     paragraph:
       "Great experience. Nice. Excellent survey. Without any interruption we can do. Legit site .   ",
     rating: 5,

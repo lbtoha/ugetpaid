@@ -9,7 +9,6 @@ import { Suspense, createContext, useState } from "react";
 import Loading from "./loading";
 // import "material-symbols";
 import FeatureOfferSurveysModal from "@/components/earn1/FeatureOfferSurveysModal";
-import FeaturedOfferModal from "@/components/earn1/FeaturedOfferModal";
 import WithdrawModal from "@/components/pages/cashOut/WithdrawModal";
 import LeaderBoardModal from "@/components/pages/leaderboard/LeaderboardTopEarners/LeaderBoardModal";
 import OfferWallPageModal from "@/components/pages/offerwalls/OfferWallPageModal";
@@ -38,8 +37,6 @@ interface MenuContextValue {
 }
 
 interface ModalContextValue {
-  featureOfferModalOpen: boolean;
-  setFeatureOfferModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
   featureOfferSurveysModalOpen: boolean;
   setFeatureOfferSurveysModalOpen: React.Dispatch<
     React.SetStateAction<boolean>
@@ -63,9 +60,6 @@ const defaultMenuContextValue: MenuContextValue = {
 
 //  modal default value for the context (empty object)
 const defaultModalContextValue: ModalContextValue = {
-  featureOfferModalOpen: false,
-  setFeatureOfferModalOpen: () => {},
-
   featureOfferSurveysModalOpen: false,
   setFeatureOfferSurveysModalOpen: () => {},
 
@@ -92,7 +86,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const [menuOpen, setMenuOpen] = useState(true);
-  const [featureOfferModalOpen, setFeatureOfferModalOpen] = useState(false);
   const [featureOfferSurveysModalOpen, setFeatureOfferSurveysModalOpen] =
     useState(false);
   const [offerWallsOpen, setOfferWallOpen] = useState(false);
@@ -106,8 +99,6 @@ export default function RootLayout({
       >
         <ModalIsOpenOrNot.Provider
           value={{
-            featureOfferModalOpen,
-            setFeatureOfferModalOpen,
             featureOfferSurveysModalOpen,
             setFeatureOfferSurveysModalOpen,
             offerWallsOpen,
@@ -133,7 +124,6 @@ export default function RootLayout({
             {/* <ScrollBackToTop /> */}
           </MenuIsOpenOrNot.Provider>
           {featureOfferSurveysModalOpen && <FeatureOfferSurveysModal />}
-          {featureOfferModalOpen && <FeaturedOfferModal />}
           {offerWallsOpen && <OfferWallPageModal />}
           {cashOutModalOpen && <WithdrawModal />}
           {leaderBoardModalOpen && <LeaderBoardModal />}
