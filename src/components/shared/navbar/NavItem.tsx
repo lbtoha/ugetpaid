@@ -8,6 +8,7 @@ type Props = {
   menuOpen: boolean;
   subButtonStyles?: string;
   subButton?: string;
+  handleClick: () => void;
 };
 
 const NavItem = ({
@@ -17,12 +18,14 @@ const NavItem = ({
   menuOpen,
   subButtonStyles,
   subButton,
+  handleClick,
 }: Props) => {
   const pathname = usePathname();
   console.log(pathname.slice(1));
   return (
     <li
-      className={`group relative rounded-[30px]  p-[6px] hover:bg-C09B65E hover:text-CFFFFFF  ${
+      onClick={handleClick}
+      className={`group custom-transition-button relative rounded-[30px] p-[6px] hover:bg-C09B65E hover:text-CFFFFFF  ${
         pathname == linkUrl || pathname.slice(1).includes(linkUrl)
           ? "bg-C09B65E text-CFFFFFF"
           : "bg-C333A4E"
@@ -35,7 +38,7 @@ const NavItem = ({
         }`}
       >
         <div
-          className={`flex  max-h-[40px] min-h-[40px] min-w-[40px] max-w-[40px] items-center justify-center rounded-full bg-C373F56 p-2 text-2xl group-hover:bg-CFFFFFF group-hover:bg-opacity-30 ${
+          className={`custom-transition-button  flex max-h-[40px] min-h-[40px] min-w-[40px] max-w-[40px] items-center justify-center rounded-full bg-C373F56 p-2 text-2xl group-hover:bg-CFFFFFF group-hover:bg-opacity-30 ${
             pathname == linkUrl ? "bg-CFFFFFF bg-opacity-30" : ""
           }`}
         >
@@ -49,7 +52,7 @@ const NavItem = ({
       </Link>
       {subButton && (
         <span
-          className={` absolute right-[25px] top-[-9px] rounded-[20px] px-2.5 text-xs ${subButtonStyles}`}
+          className={` absolute right-[25px] top-[-9px] cursor-pointer rounded-[20px] px-2.5 text-xs ${subButtonStyles}`}
         >
           {subButton}
         </span>

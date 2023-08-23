@@ -8,7 +8,7 @@ const LeaderBoardBanner = () => {
         <div className="leaderboard__priceing mx-auto flex w-5/6 items-center justify-center text-center lg:w-3/4 xxl:w-1/2 ">
           <div>
             <Image src={priceBox} alt="Price box" className="mx-auto block" />
-            <div className="flex justify-center gap-x-5 pb-S70 text-lg max-md:flex-wrap max-md:space-y-5 lg:text-xl">
+            <div className="flex justify-center gap-5 pb-S70 text-lg max-md:flex-wrap  lg:text-xl">
               <button className="rounded-[10px] bg-C02835B px-5 py-5 text-center font-bold leading-[150%] lg:px-S30">
                 $500.00 Daily
               </button>

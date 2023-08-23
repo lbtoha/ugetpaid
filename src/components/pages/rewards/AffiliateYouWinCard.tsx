@@ -10,7 +10,7 @@ type Props = {
 const AffiliateYouWinCard = ({ winePrice, bgGradient, boxShadow }: Props) => {
   return (
     <div
-      className={`inline-flex grow basis-0 flex-col items-center gap-2.5  rounded-[10px]  bg-${bgGradient} p-[30px] shadow-${boxShadow}`}
+      className={`inline-flex grow basis-0 flex-col items-center gap-2.5  rounded-[10px] ${bgGradient} p-[30px] ${boxShadow}`}
     >
       <div className="bg-[rgba(46, 53, 73, 0.50)] inline-flex h-[60px] w-[60px] items-center justify-center rounded-[10px] p-2.5">
         <Image src={coin} alt="coin" className="flex h-10 w-10   flex-col" />

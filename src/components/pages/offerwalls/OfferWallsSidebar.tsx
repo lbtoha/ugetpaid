@@ -23,7 +23,7 @@ const OfferWallsSidebar = ({
       <p className="mt-S10 pb-5 text-center text-sm text-CBDC4DA">
         {sectionDescription}
       </p>
-      <div className="flex-wrap justify-center gap-4 max-xl:flex">
+      <div>
         {sideCardData.map(
           ({ id, cardImage, top, heading, popularity, countryFlag }) => (
             <OfferWallsSideCard

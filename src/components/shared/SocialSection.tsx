@@ -17,7 +17,7 @@ const SocialSection = () => {
             Sharing your Opinion.If you want an easy way to make money from
             surveys, you should join the ugetpaid community.
           </p>
-          <div className="mt-5 flex items-center justify-center gap-x-3 text-lg text-C000000 md:mt-10 md:mt-6 md:gap-x-5 md:text-2xl">
+          <div className="mt-5 flex items-center justify-center gap-x-3 text-lg text-C000000 md:mt-10  md:gap-x-5 md:text-2xl">
             {/* Provide a font awesome icon name*/}
             <SocialIcon iconName="facebook-f" link="/" />
             <SocialIcon iconName="twitter" link="/" />

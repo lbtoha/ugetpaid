@@ -14,7 +14,6 @@ import OfferWallsSidebar from "./OfferWallsSidebar";
 
 const OfferwallsDetails = () => {
   const [filterData, setFilterData] = useState(offerWallCardData);
-  const [sortFilterData, setSortFilterData] = useState(offerWallCardData);
   // handle category filter
   const handleFilterCategory = (filterText: string) => {
     const result = offerWallCardData.filter(

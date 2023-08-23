@@ -8,14 +8,14 @@ export const navItemsData = [
   {
     id: 1202,
     iconName: "icon-e-earn",
-    menuTitle: "Earn-1",
+    menuTitle: "Earn",
     linkUrl: "/earn1",
   },
   {
     id: 12055,
     iconName: "icon-e-earn",
-    menuTitle: "Earn-2",
-    linkUrl: "/earn2",
+    menuTitle: "Earn Point",
+    linkUrl: "/earn-point",
   },
   {
     id: 1203,
@@ -29,7 +29,7 @@ export const navItemsData = [
     menuTitle: "Leaderboard",
     linkUrl: "/leaderboard",
     subButton: "$500 Daily",
-    subButtonStyles: "bg-[#1B5C4E] text-[#FAC400]",
+    subButtonStyles: "daily-bonus-button",
   },
   {
     id: 1205,
@@ -37,7 +37,7 @@ export const navItemsData = [
     menuTitle: "Rewards",
     linkUrl: "/rewards",
     subButton: "New",
-    subButtonStyles: "bg-[#333137] text-[#FAC400]",
+    subButtonStyles: "new-button",
   },
   {
     id: 1206,

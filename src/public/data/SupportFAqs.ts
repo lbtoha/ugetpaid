@@ -1,30 +1,31 @@
+import { v4 as uuidv4 } from "uuid";
 export const faqs = [
   {
-    id: 52201,
+    id: uuidv4(),
     question: "How to make money on ugetpaid?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
   {
-    id: 52202,
+    id: uuidv4(),
     question: "How is ugetpaid able to pay users?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
   {
-    id: 52203,
+    id: uuidv4(),
     question: "How long does it take to cash out your money?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
   {
-    id: 52204,
+    id: uuidv4(),
     question: "What are Terms and Conditions and Privacy Policy?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
   {
-    id: 52205,
+    id: uuidv4(),
     question: "How much money can you really earn on ugetpaid?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
@@ -32,32 +33,32 @@ export const faqs = [
 ];
 export const FaqEarning = [
   {
-    id: 52202,
+    id: uuidv4(),
     question: "How is ugetpaid able to pay users?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
   {
-    id: 52204,
+    id: uuidv4(),
     question: "What are Terms and Conditions and Privacy Policy?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
   {
-    id: 52203,
+    id: uuidv4(),
     question: "How long does it take to cash out your money?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
 
   {
-    id: 52205,
+    id: uuidv4(),
     question: "How much money can you really earn on ugetpaid?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
   {
-    id: 52201,
+    id: uuidv4(),
     question: "How to make money on ugetpaid?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
@@ -66,31 +67,31 @@ export const FaqEarning = [
 
 export const faqsContact = [
   {
-    id: 52201,
+    id: uuidv4(),
     question: "How to make money on ugetpaid?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
   {
-    id: 52202,
+    id: uuidv4(),
     question: "How is ugetpaid able to pay users?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
   {
-    id: 52203,
+    id: uuidv4(),
     question: "How long does it take to cash out your money?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
   {
-    id: 52204,
+    id: uuidv4(),
     question: "What are Terms and Conditions and Privacy Policy?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
   {
-    id: 52205,
+    id: uuidv4(),
     question: "How much money can you really earn on ugetpaid?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
@@ -98,31 +99,31 @@ export const faqsContact = [
 ];
 export const faqsAccount = [
   {
-    id: 52201,
+    id: uuidv4(),
     question: "How to make money on ugetpaid?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
   {
-    id: 52202,
+    id: uuidv4(),
     question: "How is ugetpaid able to pay users?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
   {
-    id: 52203,
+    id: uuidv4(),
     question: "How long does it take to cash out your money?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
   {
-    id: 52204,
+    id: uuidv4(),
     question: "What are Terms and Conditions and Privacy Policy?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
   {
-    id: 52205,
+    id: uuidv4(),
     question: "How much money can you really earn on ugetpaid?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
@@ -130,33 +131,33 @@ export const faqsAccount = [
 ];
 export const FaqRedeeming = [
   {
-    id: 52205,
+    id: uuidv4(),
     question: "How much money can you really earn on ugetpaid?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
   {
-    id: 52202,
+    id: uuidv4(),
     question: "How is ugetpaid able to pay users?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
 
   {
-    id: 52203,
+    id: uuidv4(),
     question: "How long does it take to cash out your money?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
   {
-    id: 52204,
+    id: uuidv4(),
     question: "What are Terms and Conditions and Privacy Policy?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
 
   {
-    id: 52201,
+    id: uuidv4(),
     question: "How to make money on ugetpaid?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
@@ -165,33 +166,33 @@ export const FaqRedeeming = [
 
 export const faqsPolicies = [
   {
-    id: 52205,
+    id: uuidv4(),
     question: "How much money can you really earn on ugetpaid?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
   {
-    id: 52202,
+    id: uuidv4(),
     question: "How is ugetpaid able to pay users?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
 
   {
-    id: 52203,
+    id: uuidv4(),
     question: "How long does it take to cash out your money?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
   {
-    id: 52204,
+    id: uuidv4(),
     question: "What are Terms and Conditions and Privacy Policy?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",
   },
 
   {
-    id: 52201,
+    id: uuidv4(),
     question: "How to make money on ugetpaid?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus pulvinar egestas non convallis semper ut fermentum pellentesque accumsan. Tellus, vitae sapien ut nunc, consectetur risus vel. Ipsum ullamcorper nec ut tortor metus, euismod est, nunc. Morbi mi integer nam nullam tortor nisl quis at a. Duis viverra ac nunc amet sed. ",

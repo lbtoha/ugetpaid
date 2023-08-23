@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 
 type Props = {
@@ -18,7 +19,10 @@ const LeaderBoardList = ({
   position,
 }: Props) => {
   return (
-    <div className="grid-cols-2 items-center justify-between gap-10 rounded-[20px] border border-C3D4660 bg-C1F2432 px-5 py-5 max-xl:flex-wrap max-lg:space-y-4 lg:grid xl:px-10">
+    <motion.div
+      whileHover={{ scale: 1.01 }}
+      className="grid-cols-2 items-center justify-between gap-10 rounded-[20px] border border-C3D4660 bg-C1F2432 px-5 py-5 max-xl:flex-wrap max-lg:space-y-4 lg:grid xl:px-10"
+    >
       <div className="flex space-x-S30 xl:space-x-S60">
         <p className="flex items-center rounded-[15px] bg-C2C3346 px-S10 py-S15 text-center">
           {position}
@@ -44,7 +48,7 @@ const LeaderBoardList = ({
           <p className="text-xs leading-[150%] text-C00FF8B">Bonus</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,7 +1,9 @@
 "use client";
+import { Tab } from "@headlessui/react";
 import Countdown from "react-countdown";
 import ShowCountDown from "../ShowCountDown";
 import AllLeaderBoard from "./AllLeaderBoard";
+import Pagination from "./Pagination";
 
 const LeaderBoardTopEarners = () => {
   return (
@@ -16,30 +18,74 @@ const LeaderBoardTopEarners = () => {
           leaderboard updates every 10 minutes. Learn more about the
           leaderboard.
         </p>
+        <Tab.Group>
+          <div className="mt-S60  flex justify-center">
+            <Tab.List className="w-fit space-x-S10 rounded-[10px] border border-C3D4660 bg-transparent p-S10 ">
+              <Tab className="focus-visible:hidden">
+                {({ selected }) => (
+                  <button
+                    className={`custom-transition-button rounded-[10px] px-10 py-S10 text-center font-bold leading-[150%] shadow-CSHADOW focus-visible:hidden ${
+                      selected
+                        ? "bg-C09B65E text-C282F41 hover:bg-C373F56 hover:text-white"
+                        : "bg-C373F56 hover:bg-C09B65E hover:text-C282F41"
+                    }`}
+                  >
+                    Daily
+                  </button>
+                )}
+              </Tab>
+              <Tab className="focus-visible:hidden">
+                {({ selected }) => (
+                  <button
+                    className={`custom-transition-button rounded-[10px] px-10 py-S10 text-center font-bold leading-[150%] shadow-CSHADOW focus-visible:hidden ${
+                      selected
+                        ? "bg-C09B65E text-C282F41 hover:bg-C373F56 hover:text-CFFFFFF"
+                        : "bg-C373F56 hover:bg-C09B65E hover:text-C282F41"
+                    }`}
+                  >
+                    Daily
+                  </button>
+                )}
+              </Tab>
+            </Tab.List>
+          </div>
+          <Tab.Panels>
+            <Tab.Panel>
+              <div className="mt-S30">
+                <p className="text-center text-xs leading-[150%] text-CBDC4DA">
+                  The current period ends in
+                </p>
+                <div className="mt-S5 flex justify-center">
+                  <Countdown
+                    daysInHours={false}
+                    date={Date.now() + 50000565700}
+                    renderer={ShowCountDown}
+                  />
+                </div>
+              </div>
 
-        <div className="mt-S60  flex justify-center">
-          <div className="w-fit space-x-S10 rounded-[10px] border border-C3D4660 bg-transparent p-S10 ">
-            <button className="rounded-[10px] bg-C373F56 px-10 py-S10 text-center font-bold leading-[150%] shadow-CSHADOW">
-              Daily
-            </button>
-            <button className="rounded-[10px] bg-C09B65E px-10 py-S10 text-center font-bold leading-[150%] text-C282F41 shadow-CSHADOW">
-              Daily
-            </button>
-          </div>
+              <AllLeaderBoard />
+            </Tab.Panel>
+            <Tab.Panel>
+              <div className="mt-S30">
+                <p className="text-center text-xs leading-[150%] text-CBDC4DA">
+                  The current period ends in
+                </p>
+                <div className="mt-S5 flex justify-center">
+                  <Countdown
+                    daysInHours={false}
+                    date={Date.now() + 50000565700}
+                    renderer={ShowCountDown}
+                  />
+                </div>
+              </div>
+              <AllLeaderBoard />
+            </Tab.Panel>
+          </Tab.Panels>
+        </Tab.Group>
+        <div className=" mx-auto mt-S60  max-w-[320px]">
+          <Pagination />
         </div>
-        <div className="mt-S30">
-          <p className="text-center text-xs leading-[150%] text-CBDC4DA">
-            The current period ends in
-          </p>
-          <div className="mt-S5 flex justify-center">
-            <Countdown
-              daysInHours={false}
-              date={Date.now() + 50000565700}
-              renderer={ShowCountDown}
-            />
-          </div>
-        </div>
-        <AllLeaderBoard />
       </div>
     </section>
   );

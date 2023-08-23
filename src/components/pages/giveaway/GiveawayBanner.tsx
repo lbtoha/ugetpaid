@@ -1,50 +1,57 @@
 "use client";
+import giveaWayIllus1 from "@/public/images/giveaway-illus-1.png";
+import giveaWayIllus2 from "@/public/images/giveaway-illus-2.png";
+import giveaWayIllus3 from "@/public/images/giveaway-illus-3.png";
 import priceBox from "@/public/images/icon/slider-icon.png";
 import Image from "next/image";
 import { useState } from "react";
+// import "swiper/css/navigation";
+import { closeIcon } from "@/components/shared/ModalCloseIcon";
+import Modal from "react-responsive-modal";
+import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import GiveaWayDailyCases from "./GiveaWayDailyCases";
 import GiveaWayPrice from "./GiveaWayPrice";
 
 const GiveawayBanner = () => {
-  const [modalOpen, setModalOpen] = useState(false);
+  const [openGiveaWayDailyCases, setOpenGiveaWayDailyCases] = useState(false);
+  const [openEnterGiveawayModal, setOpenEnterGiveawayModal] = useState(false);
+
   const [priceModalOpen, setPriceModalOpen] = useState(false);
-  const swiper = useSwiper();
   return (
-    <div className="giveawayBanner mt-S30">
+    <div className="giveawayBanner relative mt-S30">
       <div className="pt-S60">
         <div>
           <p className="text-center text-2xl">You can win money</p>
-          <h2 className="text-center text-C00D675 text-[80px] font-semibold leading-[104px] mt-S10">
+          <h2 className="mt-2.5 text-center text-4xl font-semibold text-C00D675 sm:text-5xl md:mt-5 xl:text-[80px]">
             $100,000
           </h2>
-          <div className="justify-center gap-5 flex mt-S30">
+          <div className="mx-10 mt-S30 flex flex-wrap justify-center gap-5">
             <button
-              onClick={() => setModalOpen(true)}
-              className="px-5 py-[15px] bg-C09B65E rounded-[10px] shadow justify-start items-center gap-2.5 flex text-C282F41 font-bold"
+              onClick={() => setOpenGiveaWayDailyCases(true)}
+              className="flex items-center justify-start gap-2.5 rounded-[10px] bg-C09B65E px-3 py-[15px] font-bold text-C282F41 shadow sm:px-5"
             >
               Open Daily Cases
             </button>
             <button
-              onClick={() => setPriceModalOpen(true)}
-              className="px-5 py-[15px] bg-C09B65E bg-opacity-20 rounded-[10px] border border-C78A597 justify-start items-center gap-2.5 flex font-bold"
+              onClick={() => setOpenEnterGiveawayModal(true)}
+              className="flex items-center justify-start gap-2.5 rounded-[10px] border border-C78A597 bg-C09B65E bg-opacity-20 px-3 py-[15px] font-bold sm:px-5"
             >
               Enter $10,000 Giveaway
             </button>
           </div>
         </div>
-        <div className="giveawayBanner__priceing text-center w-1/2 py-10 mx-auto flex justify-center mt-S60 ">
+        <div className="giveawayBanner__priceing mx-auto mt-10 flex w-5/6 justify-center py-3 text-center sm:py-5 md:py-10 lg:mt-S60 lg:w-2/3 xxl:w-1/2 ">
           <Swiper
             pagination={{
-              dynamicBullets: true,
-              el: ".pagination-area",
-              bulletClass: ".swiper-pagination-bullet",
+              el: ".swiper-pagination",
+              type: "bullets",
               clickable: true,
             }}
             navigation={{
-              nextEl: ".navigation-area",
-              prevEl: ".navigation-area",
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
             }}
             modules={[Pagination, Navigation]}
             className="mySwiper"
@@ -54,12 +61,12 @@ const GiveawayBanner = () => {
                 <Image
                   src={priceBox}
                   alt="Price box"
-                  className="block mx-auto mt-10"
+                  className="mx-auto mt-5 block max-md:w-[200px] md:mt-10"
                 />
-                <p className=" text-xl font-semibold leading-7 mt-S30">
+                <p className=" mt-S30 text-lg font-semibold leading-7 md:text-xl">
                   The prizes you can win vary daily and range
                 </p>
-                <p className="mt-S15 text-[32px] font-semibold leading-[41.60px]">
+                <p className="mt-S15 text-xl font-semibold leading-[41.60px] sm:text-2xl md:text-[32px]">
                   From $0,25 to $599
                 </p>
               </div>
@@ -69,46 +76,132 @@ const GiveawayBanner = () => {
                 <Image
                   src={priceBox}
                   alt="Price box"
-                  className="block mx-auto mt-10"
+                  className="mx-auto mt-5 block max-md:w-[200px] md:mt-10"
                 />
-                <p className=" text-xl font-semibold leading-7 mt-S30">
+                <p className=" mt-S30 text-lg font-semibold leading-7 md:text-xl">
                   The prizes you can win vary daily and range
                 </p>
-                <p className="mt-S15 text-[32px] font-semibold leading-[41.60px]">
+                <p className="mt-S15 text-xl font-semibold leading-[41.60px] sm:text-2xl md:text-[32px]">
                   From $0,25 to $599
                 </p>
               </div>
             </SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            <SwiperSlide>Slide 5</SwiperSlide>
-            <SwiperSlide>Slide 6</SwiperSlide>
-            <SwiperSlide>Slide 7</SwiperSlide>
-            <SwiperSlide>Slide 8</SwiperSlide>
-            <SwiperSlide>Slide 9</SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <Image
+                  src={priceBox}
+                  alt="Price box"
+                  className="mx-auto mt-5 block max-md:w-[200px] md:mt-10"
+                />
+                <p className=" mt-S30 text-lg font-semibold leading-7 md:text-xl">
+                  The prizes you can win vary daily and range
+                </p>
+                <p className="mt-S15 text-xl font-semibold leading-[41.60px] sm:text-2xl md:text-[32px]">
+                  From $0,25 to $599
+                </p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <Image
+                  src={priceBox}
+                  alt="Price box"
+                  className="mx-auto mt-5 block max-md:w-[200px] md:mt-10"
+                />
+                <p className=" mt-S30 text-lg font-semibold leading-7 md:text-xl">
+                  The prizes you can win vary daily and range
+                </p>
+                <p className="mt-S15 text-xl font-semibold leading-[41.60px] sm:text-2xl md:text-[32px]">
+                  From $0,25 to $599
+                </p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <Image
+                  src={priceBox}
+                  alt="Price box"
+                  className="mx-auto mt-5 block max-md:w-[200px] md:mt-10"
+                />
+                <p className=" mt-S30 text-lg font-semibold leading-7 md:text-xl">
+                  The prizes you can win vary daily and range
+                </p>
+                <p className="mt-S15 text-xl font-semibold leading-[41.60px] sm:text-2xl md:text-[32px]">
+                  From $0,25 to $599
+                </p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <Image
+                  src={priceBox}
+                  alt="Price box"
+                  className="mx-auto mt-5 block max-md:w-[200px] md:mt-10"
+                />
+                <p className=" mt-S30 text-lg font-semibold leading-7 md:text-xl">
+                  The prizes you can win vary daily and range
+                </p>
+                <p className="mt-S15 text-xl font-semibold leading-[41.60px] sm:text-2xl md:text-[32px]">
+                  From $0,25 to $599
+                </p>
+              </div>
+            </SwiperSlide>
           </Swiper>
         </div>
-        <div>
-          <div className=" justify-center items-center gap-5 flex mt-10">
-            <button className="w-[30px] h-[30px] p-2 hover:bg-C206C55 bg-C2A3247 rounded-[15px] justify-center items-center flex">
-              <i className="icon-b-arrow-second" aria-hidden="true"></i>
-            </button>
-            <div className="justify-start items-center gap-[5px] flex pagination-are w-20">
-              <span className=" w-3 h-3 relative bg-C206C55 rounded-md swiper-pagination-bullet" />
-            </div>
-            <button
-              onClick={() => swiper.slidePrev()}
-              className="w-[30px] h-[30px] p-2 bg-C2A3247 hover:bg-C206C55 rotate-180 rounded-[15px] justify-center items-center flex"
-            >
-              <i className="icon-b-arrow-second" aria-hidden="true"></i>
-            </button>
-          </div>
+        <div className="relative mx-auto mt-10 flex max-w-[300px] items-center justify-center gap-20">
+          <button className="swiper-button-prev flex h-[30px] w-[30px] rotate-180 items-center justify-center rounded-[15px]">
+            <i className="icon-b-arrow-second text-white"></i>
+          </button>
+          <div className="swiper-pagination"></div>
+          <button className="swiper-button-next flex h-[30px] w-[30px] rotate-180 items-center justify-center rounded-[15px]">
+            <i className="icon-b-arrow-second text-white"></i>
+          </button>
         </div>
       </div>
-      {modalOpen && <GiveaWayDailyCases setModalOpen={setModalOpen} />}
-      {priceModalOpen && (
+      {/* {modalOpen && <GiveaWayDailyCases setModalOpen={setModalOpen} />} */}
+      {/* {priceModalOpen && (
         <GiveaWayPrice setPriceModalOpen={setPriceModalOpen} />
-      )}
+      )} */}
+
+      <div className="max-lg:hidden">
+        <Image
+          src={giveaWayIllus2}
+          alt="Giveaway illustration"
+          className="absolute max-xl:hidden xl:right-[4%] xl:top-[5%] xl:max-4xl:w-[300px]"
+        />
+        <Image
+          src={giveaWayIllus1}
+          alt="Giveaway illustration"
+          className="absolute left-[5%] top-3 max-4xl:w-[200px] xl:left-[10%] xl:top-0"
+        />
+        <Image
+          src={giveaWayIllus3}
+          alt="Giveaway illustration"
+          className="absolute left-[5%] top-[40%] max-4xl:w-[200px] xl:left-[5%] xl:top-[35%]"
+        />
+      </div>
+      <Modal
+        open={openGiveaWayDailyCases}
+        onClose={() => setOpenGiveaWayDailyCases(false)}
+        center
+        classNames={{
+          modal: "customModal giveaWayDailyCases",
+        }}
+        closeIcon={closeIcon}
+      >
+        <GiveaWayDailyCases />
+      </Modal>
+      <Modal
+        open={openEnterGiveawayModal}
+        onClose={() => setOpenEnterGiveawayModal(false)}
+        center
+        classNames={{
+          modal: "customModal",
+        }}
+        closeIcon={closeIcon}
+      >
+        <GiveaWayPrice />
+      </Modal>
     </div>
   );
 };

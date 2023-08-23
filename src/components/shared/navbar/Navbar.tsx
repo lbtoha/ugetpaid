@@ -10,10 +10,23 @@ import NavItem from "./NavItem";
 
 const Navbar = () => {
   const [scrollHight, setScrollHight] = useState<number>(0);
+  const [click, setClick] = useState(false);
+  const { menuOpen, setMenuOpen } = useContext(MenuIsOpenOrNot);
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
     setScrollHight(scrollY);
+  };
+
+  const handleClick = () => {
+    if (click == false) {
+      setClick(true);
+    }
+    if (menuOpen == false) {
+      setClick(false);
+      setMenuOpen(!menuOpen);
+    }
+    return;
   };
 
   useEffect(() => {
@@ -22,7 +35,6 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const { menuOpen, setMenuOpen } = useContext(MenuIsOpenOrNot);
   return (
     <header
       className={`${
@@ -46,7 +58,9 @@ const Navbar = () => {
         >
           <div className="flex items-center justify-end max-xl:gap-x-5 sm:justify-between ">
             <div
-              onClick={() => setMenuOpen(!menuOpen)}
+              onClick={() => {
+                setMenuOpen(!menuOpen);
+              }}
               className="absolute left-1 z-20 flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[15px] bg-C373F56 p-2 md:-left-[10px]"
             >
               <i className="icon-c-bar text-sm text-CBBC2FA "></i>
@@ -61,13 +75,13 @@ const Navbar = () => {
             </form>
 
             <div className="flex items-center gap-x-3 md:gap-x-6">
-              <button className="flex items-center gap-x-2 rounded-[10px] bg-C373F56 px-3 py-2 text-base font-bold text-CFFFFFF md:py-[10px] lg:px-5">
+              <button className="custom-transition-button flex items-center gap-x-2 rounded-[10px] bg-C373F56 px-3 py-2 text-base font-bold text-CFFFFFF hover:bg-C09B65E hover:text-C282F41 md:py-[10px] lg:px-5">
                 <div className="hidden lg:block">
                   <i className="fas fa-user"></i>
                 </div>
                 <span>Sign in</span>
               </button>
-              <button className="flex items-center gap-x-2 rounded-[10px] bg-C09B65E px-3 py-2 text-base font-bold text-C282F41 md:py-[10px] lg:px-5">
+              <button className="custom-transition-button flex items-center gap-x-2 rounded-[10px] bg-C09B65E px-3 py-2 text-base font-bold text-C282F41 hover:bg-C373F56 hover:text-white md:py-[10px] lg:px-5">
                 <div className="hidden lg:block">
                   <i className="fas fa-user-plus"></i>
                 </div>
@@ -82,14 +96,16 @@ const Navbar = () => {
       </div>
       {/* sidebar menu */}
       <div
-        className={` sidebar-menu custom-transition fixed left-0 top-0 h-screen overflow-y-auto bg-C2E3549  p-5 max-md:z-[200] ${
-          menuOpen
+        className={` sidebar-menu custom-transition fixed left-0 top-0 h-screen overflow-y-auto bg-C2E3549  p-5 max-md:z-[200]  ${
+          menuOpen || click
             ? "max-md:left-[-390px] max-md:opacity-0"
             : "opacity-100  max-md:block"
-        } ${menuOpen ? "w-[240px] md:w-[240px]" : "md:w-[150px]"}`}
+        } ${menuOpen ? "w-[240px] md:w-[240px]" : "md:w-[150px]"} `}
       >
         <div
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={() => {
+            setMenuOpen(!menuOpen);
+          }}
           className="absolute right-3 top-3 block text-2xl md:hidden"
         >
           <i className="fa-solid fa-xmark"></i>
@@ -120,6 +136,7 @@ const Navbar = () => {
               }) => (
                 <NavItem
                   key={id}
+                  handleClick={handleClick}
                   iconName={iconName}
                   menuTitle={menuTitle}
                   linkUrl={linkUrl}

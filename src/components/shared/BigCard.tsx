@@ -6,11 +6,20 @@ type Props = {
   cardHeading: string;
   cardText: string;
   btnText: string;
+  cardBg: string;
 };
 
-const BigCard = ({ cardImage, cardHeading, cardText, btnText }: Props) => {
+const BigCard = ({
+  cardImage,
+  cardHeading,
+  cardText,
+  cardBg = "gradient-featured-offer-watch-video-1",
+  btnText,
+}: Props) => {
   return (
-    <div className=" flex items-center justify-center rounded-xl bg-gradient-offer-walls-1 px-8 py-10 text-center xxl:px-10 xxl:py-S90">
+    <div
+      className={`bg-gradient-offer-walls-1 flex items-center justify-center rounded-xl px-8 py-10 text-center xxl:px-10 xxl:py-S90 ${cardBg}`}
+    >
       <div>
         <Image
           src={cardImage}

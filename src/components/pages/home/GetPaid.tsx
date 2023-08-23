@@ -4,6 +4,7 @@ import paidShape1 from "@/public/images/get-paid-shape-1.png";
 import paidShape2 from "@/public/images/get-paid-shape-2.png";
 import paidShape3 from "@/public/images/get-paid-shape-3.png";
 import paidShape4 from "@/public/images/get-paid-shape-4.png";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
 import PrimaryButton from "../../shared/PrimaryButton";
@@ -11,7 +12,11 @@ import PrimaryButton from "../../shared/PrimaryButton";
 const GetPaid = () => {
   return (
     <section className="banner-section relative mt-[15px] rounded-xl">
-      <div className="section-gap grid-cols-12 items-center lg:grid ">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        className="section-gap grid-cols-12 items-center lg:grid "
+      >
         <div className="z-10 col-span-6 pb-S60 xl:pb-S80 xxl:pb-S120 4xl:col-span-5">
           <div className="pl-8 sm:pl-10 md:pl-S60">
             <h1 className="max-w-[612px]">
@@ -62,7 +67,7 @@ const GetPaid = () => {
             className="absolute left-[45%] top-3 max-xl:w-[70px] max-sm:hidden"
           />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

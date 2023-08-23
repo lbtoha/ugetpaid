@@ -1,7 +1,7 @@
-import FeaturedOffer from "@/components/earn1/FeaturedOffer";
-import OfferWall from "@/components/earn1/OfferWall";
-import Surveys from "@/components/earn1/Surveys";
-import WatchVideo from "@/components/earn1/WatchVideo";
+import FeaturedOffer from "@/components/earn/FeaturedOffer";
+import OfferWall from "@/components/earn/OfferWall";
+import Surveys from "@/components/earn/Surveys";
+import WatchVideo from "@/components/earn/WatchVideo";
 import LatestActiveSlider from "@/components/pages/home/LatestActiveSlider";
 import SocialSection from "@/components/shared/SocialSection";
 import { Metadata } from "next";

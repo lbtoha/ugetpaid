@@ -2,27 +2,21 @@
 import { latestActiveSliderData } from "@/public/data/home";
 import Image from "next/image";
 import "swiper/css/autoplay";
-import "swiper/css/free-mode";
-import { Autoplay, FreeMode } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { v4 as uuidv4 } from "uuid";
 
 const LatestActiveSlider = () => {
   return (
     <Swiper
-      slidesPerView={1}
+      modules={[Autoplay]}
+      slidesPerView={"auto"}
       spaceBetween={3}
-      modules={[Autoplay, FreeMode]}
-      freeMode={{
-        enabled: true,
-        minimumVelocity: 0.02,
-        momentumBounce: false,
-      }}
+      speed={5000}
       loop={true}
-      speed={4000}
       autoplay={{
-        delay: 1,
-        disableOnInteraction: false,
+        delay: 0,
+        // disableOnInteraction: false,
       }}
       breakpoints={{
         576: {

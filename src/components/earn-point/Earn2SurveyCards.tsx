@@ -14,6 +14,7 @@ const Earn2SurveyCards = () => {
       cardHeading: "Surveys",
       cardText: "Answer daily surveys.",
       btnText: "View All Surveys",
+      cardBg: "gradient-earn-point-card-1",
     },
     {
       id: 54801,
@@ -21,6 +22,7 @@ const Earn2SurveyCards = () => {
       cardHeading: "Offerwalls",
       cardText: "Complete offers from our trusted partners.",
       btnText: "Invite Now",
+      cardBg: "gradient-earn-point-card-2",
     },
     {
       id: 54801,
@@ -28,6 +30,7 @@ const Earn2SurveyCards = () => {
       cardHeading: "Offers",
       cardText: "Complete curated offers.",
       btnText: "Watch Videos Start Earning",
+      cardBg: "gradient-earn-point-card-3",
     },
     {
       id: 54801,
@@ -35,6 +38,7 @@ const Earn2SurveyCards = () => {
       cardHeading: "Watch Videos",
       cardText: "Watch unlimited videos.",
       btnText: "Watch Videos Start Earning",
+      cardBg: "gradient-earn-point-card-4",
     },
     {
       id: 54801,
@@ -42,6 +46,7 @@ const Earn2SurveyCards = () => {
       cardHeading: "Referrals",
       cardText: "Get your referral link and invite friends.",
       btnText: "Invite Now",
+      cardBg: "gradient-earn-point-card-5",
     },
     {
       id: 54801,
@@ -49,18 +54,20 @@ const Earn2SurveyCards = () => {
       cardHeading: "Promotions",
       cardText: "Do Idle-Empire special promotions.",
       btnText: "Watch Videos Start Earning",
+      cardBg: "gradient-earn-point-card-6",
     },
   ];
   return (
     <div className="mt-4 md:mt-7 xl:mt-10">
       <div className="grid grid-cols-1 items-stretch justify-between gap-5 sm:grid-cols-2 xl:grid-cols-3 xl:gap-6">
         {Earn2CardData.map(
-          ({ id, cardImage, cardHeading, cardText, btnText }) => (
+          ({ id, cardImage, cardHeading, cardBg, cardText, btnText }) => (
             <BigCard
               key={id}
               cardImage={cardImage}
               cardHeading={cardHeading}
               cardText={cardText}
+              cardBg={cardBg}
               btnText={btnText}
             />
           ),

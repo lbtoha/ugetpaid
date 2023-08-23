@@ -1,4 +1,4 @@
-import Earn2SurveyCards from "@/components/earn2/Earn2SurveyCards";
+import Earn2SurveyCards from "@/components/earn-point/Earn2SurveyCards";
 import PageNavigationHeader from "@/components/shared/PageNavigationHeader";
 import SocialSection from "@/components/shared/SocialSection";
 import { Metadata } from "next";

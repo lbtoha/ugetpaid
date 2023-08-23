@@ -1,22 +1,25 @@
 "use client";
-import { ModalIsOpenOrNot } from "@/app/layout";
-import { offerAndCardData } from "@/public/offerAndCardData";
-import Link from "next/link";
-import { useContext, useState } from "react";
+import { offerAndCardData } from "@/public/data/featureOffer";
+import { useState } from "react";
+import Modal from "react-responsive-modal";
+import { v4 as uuidv4 } from "uuid";
+import { closeIcon } from "../shared/ModalCloseIcon";
 import OfferAndSurveyCard from "../shared/OfferAndSurveyCard";
 import OfferPageSectionHeading from "../shared/OfferPageSectionHeading";
+import PrimaryLinkBtn from "../shared/PrimaryLinkBtn";
+import FeatureOfferSurveysModal from "./FeatureOfferSurveysModal";
 
 const Surveys = () => {
   const sliceData = offerAndCardData.slice(0, 4);
   const [showData, setShowData] = useState(sliceData);
-  const { setFeatureOfferSurveysModalOpen } = useContext(ModalIsOpenOrNot);
-  const handleModalOpen = () => {
-    setFeatureOfferSurveysModalOpen(true);
-  };
+  const [open, setOpen] = useState(false);
+  const handleSetOpen = () => setOpen(true);
+
   return (
     <section className="section-gap">
-      <div className="rounded-[10px] border border-C535E7C px-S15 pb-S80 pt-S120">
+      <div className="rounded-[10px] border-C535E7C lg:border lg:px-S15 lg:pb-S80 lg:pt-S60 xxl:pt-S120">
         <OfferPageSectionHeading
+          key={uuidv4()}
           heading="Surveys"
           subHeading="Complete surveys to earn coins. You will be rewarded for each survey completed."
         />
@@ -33,12 +36,13 @@ const Surveys = () => {
             }) => (
               <>
                 <OfferAndSurveyCard
-                  key={id}
-                  setModalOpen={handleModalOpen}
+                  key={uuidv4()}
+                  setModalOpen={handleSetOpen}
                   cardImage={cardImage}
                   bonus={bonus}
                   heading={heading}
                   countryFlag={countryFlag}
+                  cardBg={cardBg}
                   popularity={popularity}
                 />
               </>
@@ -46,20 +50,31 @@ const Surveys = () => {
           )}
         </div>
         <div
-          className={`mt-S60 flex items-center justify-center ${
+          // mt-8 md:mt-10 xl:mt-S60
+          className={` mt-8 flex items-center justify-center md:mt-10 xl:mt-S60 ${
             showData.length == offerAndCardData.length && "hidden"
           }`}
         >
           <div>
-            <Link
-              href="/earn1/surveys"
-              className="shadow-[0px  4px 16px 0px rgba(0, 0, 0, 0.25)] w-fit cursor-pointer rounded-xl bg-C09B65E  px-5 py-[10px] text-sm font-bold text-C282F41"
-            >
-              <span>View all Surveys</span>
-            </Link>
+            <PrimaryLinkBtn
+              key={uuidv4()}
+              link="/earn1/surveys"
+              linkText="View all Surveys"
+            />
           </div>
         </div>
       </div>
+      <Modal
+        open={open}
+        onClose={() => setOpen(false)}
+        center
+        classNames={{
+          modal: "customModal offer-walls-modal",
+        }}
+        closeIcon={closeIcon}
+      >
+        <FeatureOfferSurveysModal />
+      </Modal>
     </section>
   );
 };

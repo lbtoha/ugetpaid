@@ -73,7 +73,7 @@ module.exports = {
         },
       ],
       "5xl": [
-        "3.125rem", // 40px
+        "3.125rem", // 50px
         {
           lineHeight: "3.23rem", // 52px
           fontWeight: "600",
@@ -242,40 +242,9 @@ module.exports = {
       },
 
       boxShadow: {
-        "BSAffiliates-1": "0px 4px 0px 0px #0E5434",
-        "BSAffiliates-2": "0px 4px 0px 0px #2A345C",
-        "BSAffiliates-3": "0px 4px 0px 0px #255C5F",
-        "BSAffiliates-4": "0px 4px 0px 0px #765E31",
-        "BSAffiliates-5": "0px 4px 0px 0px #411A36 ",
-        "BSAffiliates-6": "0px 4px 0px 0px #5A2323",
-        "BSAffiliates-7": "0px 4px 0px 0px #1A2E70",
         BSGiveaway: "0px 4px 32px 0px rgba(3, 4, 4, 0.16)",
       },
       backgroundImage: {
-        "gradient-offer-walls-1":
-          "linear-gradient(155deg, #2E3549 0%, #12292E 100%)",
-        "gradient-offer-walls-2":
-          "linear-gradient(155deg, #2E3549 0%, #2E1212 100%)",
-        "gradient-offer-walls-3":
-          "linear-gradient(155deg, #2E3549 0%, #392F1B 100%)",
-        "gradient-offer-walls-4":
-          "linear-gradient(155deg, #2E3549 0%, #2F1C34 100%)",
-        "gradient-offer-walls-5":
-          "linear-gradient(155deg, #2E3549 0%, #1C341D 100%)",
-        "gradient-affiliates-1":
-          "linear-gradient(180deg, #2E3549 0%, #183327 100%)",
-        "gradient-affiliates-2":
-          "linear-gradient(180deg, #2E3549 0%, #202743 100%)",
-        "gradient-affiliates-3":
-          "linear-gradient(180deg, #2E3549 0%, #1B4446 100%)",
-        "gradient-affiliates-4":
-          "linear-gradient(180deg, #2E3549 0%, #40461B 100%)",
-        "gradient-affiliates-5":
-          "linear-gradient(180deg, #2E3549 0%, #34142B 100%)",
-        "gradient-affiliates-6":
-          "linear-gradient(180deg, #2E3549 0%, #461B1B 100%)",
-        "gradient-affiliates-7":
-          "linear-gradient(180deg, #2E3549 0%, #142459 100%)",
         "gradient-giveaway":
           "linear-gradient(180deg, #2B5548 0%, #2C3448 97.40%)",
         "gradient-giveaway-modal":
@@ -309,8 +278,11 @@ module.exports = {
         ".custom-transition-fade": {
           transition: "all .2s ease-in-out",
         },
+        ".custom-transition-button": {
+          transition: "all 0.15s ease-in-out",
+        },
         ".custom-fade": {
-          transition: "opacity .15s linear",
+          transition: "opacity 5s ease-out",
         },
 
         ".border-gradient": {

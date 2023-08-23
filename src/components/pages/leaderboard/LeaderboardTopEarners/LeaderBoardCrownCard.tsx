@@ -1,5 +1,6 @@
 import ProfileImageBig from "@/components/shared/ProfileImageBig";
 import crown from "@/public/images/icon/crown-kings.png";
+import { motion } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 
 type Props = {
@@ -22,9 +23,10 @@ const LeaderBoardCrownCard = ({
   setLeaderBoardModalOpen,
 }: Props) => {
   return (
-    <div
+    <motion.div
+      whileHover={{ scale: 1.03 }}
       onClick={() => setLeaderBoardModalOpen(true)}
-      className="relative w-full rounded-[15px] border border-C3D4660 bg-C1F2432 px-S30 pb-S60 pt-[100px]"
+      className="relative w-full cursor-pointer rounded-[15px] border border-C3D4660 bg-C1F2432 px-S30 pb-S60 pt-[100px]"
     >
       <div className="flex justify-center ">
         <Image src={crown} alt="Crown" />
@@ -49,7 +51,7 @@ const LeaderBoardCrownCard = ({
         <p className="text-center text-xl text-C1A1F2C">{position}</p>
         <p className="text-center text-xs text-C1A1F2C">Place</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

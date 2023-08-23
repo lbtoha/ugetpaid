@@ -1,4 +1,14 @@
 // ====== Home page =======
+/* navbar sub-button */
+.daily-bonus-button {
+  background: #1b5c4e;
+  color: #00d675;
+}
+
+.new-button {
+  background: #333137;
+  color: #fac400;
+}
 // banner section
 .banner-section {
   background-image: url(../public/images/get-paid-bg.png),
@@ -74,7 +84,26 @@
   border-radius: 30px;
 }
 
-// ====== Earn page =======
+// home page faq section
+.animation-plus {
+  transition: all 0.5s ease;
+}
+.rotate-button-45 {
+  transform: rotate(45deg);
+}
+
+// home page rating star
+.rating-star-style {
+  gap: 4px;
+  max-width: 19px;
+  svg {
+    stroke-width: 0%;
+  }
+}
+
+// ====== Home page end =======
+
+// ====== Earn page start =======
 // offer section
 .featured-offer-section {
   background-image: url(../public/images/get-paid-bg.png),
@@ -118,7 +147,63 @@
   }
 }
 
-// ====== Leader board page =======
+// offer walls section and surveys section card background gradient
+.gradient-offer-walls-1 {
+  background: linear-gradient(155deg, #2e3549 0%, #392f1b 100%);
+}
+.gradient-offer-walls-2 {
+  background: linear-gradient(155deg, #2e3549 0%, #12292e 100%);
+}
+.gradient-offer-walls-3 {
+  background: linear-gradient(155deg, #2e3549 0%, #2e1212 100%);
+}
+
+.gradient-offer-walls-4 {
+  background: linear-gradient(155deg, #2e3549 0%, #2f1c34 100%);
+}
+.gradient-offer-walls-5 {
+  background: linear-gradient(155deg, #2e3549 0%, #1c341d 100%);
+}
+
+.gradient-featured-offer-watch-video-1 {
+  background: linear-gradient(216deg, #2e3549 0%, #12292e 100%);
+}
+.gradient-featured-offer-watch-video-2 {
+  background: linear-gradient(219deg, #2e3549 0%, #392f1b 100%);
+}
+.gradient-featured-offer-watch-video-3 {
+  background: linear-gradient(219deg, #2e3549 0%, #352035 100%);
+}
+
+// ====== Earn page end =======
+
+// ====== Earn point page start =======
+/* Earn Point page card background gradient */
+.gradient-earn-point-card-1 {
+  background: linear-gradient(216deg, #2e3549 0%, #2d122e 100%);
+}
+.gradient-earn-point-card-2 {
+  background: linear-gradient(219deg, #2e3549 0%, #391b1b 100%);
+}
+
+.gradient-earn-point-card-3 {
+  background: linear-gradient(219deg, #2e3549 0%, #203522 100%);
+}
+
+.gradient-earn-point-card-4 {
+  background: linear-gradient(216deg, #2e3549 0%, #12292e 100%);
+}
+
+.gradient-earn-point-card-5 {
+  background: linear-gradient(219deg, #2e3549 0%, #392f1b 100%);
+}
+
+.gradient-earn-point-card-6 {
+  background: linear-gradient(219deg, #2e3549 0%, #352035 100%);
+}
+// ====== Earn point page end =======
+
+// ====== Leader board page start =======
 // banner section
 .leaderboard {
   background-image: url(../public/images/price-area-banner.png);
@@ -140,28 +225,31 @@
   margin-bottom: 2rem;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   gap: 8px;
+  font-size: 16px;
   list-style-type: none;
-  padding: 0 3rem;
-  margin-bottom: 120px;
+  padding: 0 0rem;
+  margin-bottom: 30px;
 
   li a {
     border-radius: 7px;
     padding: 0.5rem 0.8rem;
-    border: var(--primary-color-1) 1px solid;
-    color: var(--primary-color-1);
+    background: #2c3346;
+    border: transparent 1px solid;
+    color: #fff;
     cursor: pointer;
 
     &.active a {
-      border: var(--primary-color-1) 1px solid;
-      background-color: var(--primary-color-1);
+      border: #00ff8b 1px solid;
+      background-color: #00ff8b;
       color: #fff;
     }
   }
 }
 
 ul.pagination li.selected a {
-  background-color: #0366d6;
+  background-color: #00ff8b;
   border-color: transparent;
   color: white;
   min-width: 30px;
@@ -170,8 +258,8 @@ ul.pagination li.selected a {
 ul.pagination li.disabled a {
   border-radius: 7px;
   padding: 0.5rem 0.8rem;
-  border: var(--primary-color-1) 1px solid;
-  background: #caccd1;
+  border: #00ff8b 1px solid;
+  background: #575e6f;
   border-color: transparent;
 }
 
@@ -179,23 +267,193 @@ ul.pagination li.disable,
 ul.pagination li.disabled a {
   cursor: default;
 }
+// ====== Leader board page start =======
 
-// modal
-.rank-bg {
-  background-image: url(../public/images/rank-bg.png);
+// ====== Rewards page start =======
+/* Affiliates card background gradient */
+.gradient-affiliates-1 {
+  background: linear-gradient(180deg, #2e3549 0%, #183327 100%);
 }
+.gradient-affiliates-2 {
+  background: linear-gradient(180deg, #2e3549 0%, #202743 100%);
+}
+.gradient-affiliates-3 {
+  background: linear-gradient(180deg, #2e3549 0%, #1b4446 100%);
+}
+.gradient-affiliates-4 {
+  background: linear-gradient(180deg, #2e3549 0%, #40461b 100%);
+}
+.gradient-affiliates-5 {
+  background: linear-gradient(180deg, #2e3549 0%, #34142b 100%);
+}
+.gradient-affiliates-6 {
+  background: linear-gradient(180deg, #2e3549 0%, #461b1b 100%);
+}
+.gradient-affiliates-7 {
+  background: linear-gradient(180deg, #2e3549 0%, #142459 100%);
+}
+
+/* Affiliates card box shadow */
+.BSAffiliates-1 {
+  box-shadow: 0px 4px 0px 0px #0e5434;
+}
+.BSAffiliates-2 {
+  box-shadow: 0px 4px 0px 0px #2a345c;
+}
+.BSAffiliates-3 {
+  box-shadow: 0px 4px 0px 0px #255c5f;
+}
+.BSAffiliates-4 {
+  box-shadow: 0px 4px 0px 0px #765e31;
+}
+.BSAffiliates-5 {
+  box-shadow: 0px 4px 0px 0px #411a36;
+}
+.BSAffiliates-6 {
+  box-shadow: 0px 4px 0px 0px #5a2323;
+}
+.BSAffiliates-7 {
+  box-shadow: 0px 4px 0px 0px #1a2e70;
+}
+
+// ====== Rewards page end =======
 
 // ====== giveaway page start =======
 // banner section
 .giveawayBanner {
   background-image: url(../public/images/giveaway-bg.png);
   background-position: center top;
-
+  background-size: cover;
   background-repeat: no-repeat;
 
   &__priceing {
     background-color: #206c55;
-
     border-radius: 15px;
   }
+}
+
+// slider bullets
+.swiper-pagination-bullets {
+  top: -10px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin: 0 auto;
+
+  // slider bullet style
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    border-radius: 6px;
+    border: 1px solid #d3fff2;
+  }
+
+  // active bullet style
+  .swiper-pagination-bullet-active {
+    border: none;
+    height: 12px;
+    width: 12px;
+    background: #206c55;
+  }
+}
+
+// slider previous navigation style
+.swiper-button-prev {
+  background: #206c55;
+  &[class^="swiper-button-"] {
+    width: 30px;
+    height: 30px;
+    rotate: 180deg;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    font-size: 14px;
+  }
+  &[class^="swiper-button-"]::after {
+    content: "";
+  }
+}
+
+// slider next navigation style
+.swiper-button-next {
+  background: #206c55;
+  &[class^="swiper-button-"] {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  &[class^="swiper-button-"]::after {
+    content: "";
+  }
+}
+
+// slider disable button style
+.swiper-button-disabled {
+  opacity: 100 !important;
+  background: #2a3247;
+}
+
+@media (min-width: 1800px) {
+  .giveawayBanner {
+    background-size: contain;
+  }
+}
+// ====== giveaway page end =======
+
+// ====== community page start =======
+/* community page social card button style */
+.steam-color {
+  background: rgb(66, 76, 107, 0.2);
+  border-color: #424c6b;
+}
+.twitter-color {
+  background: rgb(84, 172, 237, 0.2);
+  border-color: #54aced;
+}
+.facebook-color {
+  background: rgb(40, 83, 150, 0.2);
+  border-color: #285396;
+}
+.instagram-color {
+  background: rgb(155, 84, 238, 0.2);
+  border-color: #9b54ee;
+}
+.discord-color {
+  background: rgb(139, 158, 255, 0.2);
+  border-color: #8b9eff;
+}
+// ====== community page end =======
+
+// ====== Shared component style start =======
+//
+.rank-bg {
+  background-image: url(../public/images/rank-bg.png);
+}
+
+// featured offer banner modal
+.customModal {
+  padding: 0 !important;
+  background: transparent !important;
+  button {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.offer-walls-modal {
+  max-width: 1000px !important;
+}
+
+.leaderBoardModal {
+  max-width: 1000px !important;
 }

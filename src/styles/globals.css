@@ -2,19 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* width */
+/*===== scrollbar style start ====*/
 ::-webkit-scrollbar {
   width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #183327;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: green;
+  background: #00ff8b;
 }
 
 /* Handle on hover */
@@ -24,6 +24,7 @@
 .sidebar-menu::-webkit-scrollbar {
   display: none;
 }
+/*===== scrollbar style end ====*/
 
 input {
   width: 100%;
@@ -31,51 +32,8 @@ input {
 }
 
 @layer components {
+  /* section top gap */
   .section-gap {
-    @apply pt-[60px] lg:pt-[80px] xl:pt-[120px];
-  }
-
-  .padding-top-120 {
-    @apply pt-[120px];
-  }
-  .padding-bottom-120 {
-    @apply pb-[120px];
-  }
-
-  .padding-left-120 {
-    @apply pl-[120px];
-  }
-
-  .padding-right-120 {
-    @apply pr-[120px];
-  }
-
-  .padding-top-60 {
-    @apply pt-[60px];
-  }
-  .padding-bottom-60 {
-    @apply pb-[60px];
-  }
-
-  .padding-left-60 {
-    @apply pl-[60px];
-  }
-
-  .padding-right-60 {
-    @apply pr-[60px];
+    @apply pt-10 md:pt-[60px] xl:pt-[80px] xxl:pt-[120px];
   }
 }
-
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-} */
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */

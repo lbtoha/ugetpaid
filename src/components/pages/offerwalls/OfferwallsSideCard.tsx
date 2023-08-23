@@ -1,3 +1,4 @@
+"use client";
 import Image, { StaticImageData } from "next/image";
 import RangeSlider from "react-range-slider-input";
 
@@ -18,7 +19,7 @@ const OfferWallsSideCard = ({
 }: Props) => {
   return (
     <div className={`border-C455070 bg-transparent py-S10 xl:border-t`}>
-      <div className="relative flex items-center gap-x-4 rounded-[15px] border-C455070 px-5 py-S15 hover:bg-C3D4661 max-3xl:flex-wrap max-xl:rounded-md max-xl:border">
+      <div className="relative flex items-center gap-x-4 rounded-[15px] border-C455070 px-5 py-S15 hover:bg-C3D4661 max-4xl:flex-wrap max-xl:rounded-md max-xl:border">
         <Image
           src={cardImage}
           alt="Offer wall image"
@@ -34,7 +35,7 @@ const OfferWallsSideCard = ({
               <span className="text-sx">{popularity}</span>
             </div>
           </div>
-          <div className="mt-1 w-[150px] xxl:w-[180px]">
+          <div className="mt-1 w-[150px] xxl:w-[180px] 3xl:w-[150px]">
             <RangeSlider
               className="single-thumb"
               min={0}

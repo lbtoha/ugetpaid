@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import RangeSlider from "react-range-slider-input";
+import { v4 as uuidv4 } from "uuid";
 
 type Props = {
   cardImage: StaticImageData;
@@ -7,6 +8,7 @@ type Props = {
   heading: string;
   countryFlag: StaticImageData;
   popularity: number;
+  cardBg?: string;
   setModalOpen?: () => void;
 };
 
@@ -16,12 +18,13 @@ const OfferAndSurveyCard = ({
   heading,
   countryFlag,
   popularity,
+  cardBg = "gradient-offer-walls2",
   setModalOpen,
 }: Props) => {
   return (
     <div
       onClick={setModalOpen}
-      className={`flex items-center gap-x-4 rounded-[10px] bg-gradient-offer-walls-1 p-S10 shadow shadow-CSHADOW ${
+      className={`flex items-center gap-x-4 ${cardBg} rounded-[10px] p-S10 shadow shadow-CSHADOW ${
         setModalOpen && "cursor-pointer"
       }`}
     >
@@ -40,8 +43,9 @@ const OfferAndSurveyCard = ({
             <span className="text-sx">{popularity}</span>
           </div>
         </div>
-        <div className="mt-1 w-[150px] lg:w-[180px]">
+        <div className="mt-1 w-[130px] lg:w-[180px]">
           <RangeSlider
+            key={uuidv4()}
             className="single-thumb"
             min={0}
             max={100}

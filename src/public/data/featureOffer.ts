@@ -1,3 +1,7 @@
+import usaFlag from "@/public/images/icon/usa-flag.png";
+import watchVideo1 from "@/public/images/icon/watch-videos-icon-1.png";
+import watchVideo2 from "@/public/images/icon/watch-videos-icon-2.png";
+import watchVideo3 from "@/public/images/icon/watch-videos-icon-3.png";
 import offerWall1 from "@/public/images/offer-walls-img-1.png";
 import offerWall2 from "@/public/images/offer-walls-img-2.png";
 import offerWall3 from "@/public/images/offer-walls-img-3.png";
@@ -7,7 +11,33 @@ import offerWall6 from "@/public/images/offer-walls-img-6.png";
 import offerWall7 from "@/public/images/offer-walls-img-7.png";
 import offerWall8 from "@/public/images/offer-walls-img-8.png";
 import offerWall9 from "@/public/images/offer-walls-img-9.png";
-import usaFlag from "@/public/images/icon/usa-flag.png";
+import surveys1 from "@/public/images/survery-img-1.png";
+import surveys2 from "@/public/images/survery-img-2.png";
+import surveys3 from "@/public/images/survery-img-3.png";
+
+export const modalData = [
+  {
+    id: 545401,
+    cardImage: surveys1,
+    cardTitle: "Your Surveys",
+    detailText:
+      "You earn 6,250 points per survey and you can complete multiple surveys per day. Complete the survey until you reach the &quot;Thank you&quot; page.",
+  },
+  {
+    id: 545402,
+    cardImage: surveys2,
+    cardTitle: "CPX Research",
+    detailText:
+      "Answer profiling questions and start doing matching surveys. Check back daily for new surveys.",
+  },
+  {
+    id: 545403,
+    cardImage: surveys3,
+    cardTitle: "Speak Up",
+    detailText:
+      "Speak Up asks you a few questions and redirects you to a survey that matches your profile. You can complete multiple surveys per day with Speak Up!",
+  },
+];
 
 export const offerAndCardData = [
   {
@@ -17,7 +47,7 @@ export const offerAndCardData = [
     heading: "Hexagon",
     popularity: 80,
     countryFlag: usaFlag,
-    cardBg: "bg-gradient-offer-walls-1",
+    cardBg: "gradient-offer-walls-1",
   },
   {
     id: "55802",
@@ -26,7 +56,7 @@ export const offerAndCardData = [
     heading: "Connect People",
     countryFlag: usaFlag,
     popularity: 60,
-    cardBg: "bg-gradient-offer-walls-2",
+    cardBg: "gradient-offer-walls-2",
   },
   {
     id: "558022",
@@ -35,7 +65,7 @@ export const offerAndCardData = [
     heading: "Flamefire",
     countryFlag: usaFlag,
     popularity: 50,
-    cardBg: "bg-gradient-offer-walls-3",
+    cardBg: "gradient-offer-walls-3",
   },
   {
     id: "558052",
@@ -44,7 +74,7 @@ export const offerAndCardData = [
     heading: "Spybats",
     countryFlag: usaFlag,
     popularity: 90,
-    cardBg: "bg-gradient-offer-walls-4",
+    cardBg: "gradient-offer-walls-4",
   },
   {
     id: "55804454",
@@ -53,7 +83,7 @@ export const offerAndCardData = [
     heading: "Triangle",
     countryFlag: usaFlag,
     popularity: 40,
-    cardBg: "bg-gradient-offer-walls-2",
+    cardBg: "gradient-offer-walls-2",
   },
   {
     id: "55802454",
@@ -62,7 +92,7 @@ export const offerAndCardData = [
     heading: "Spybats",
     countryFlag: usaFlag,
     popularity: 80,
-    cardBg: "bg-gradient-offer-walls-1",
+    cardBg: "gradient-offer-walls-1",
   },
   {
     id: "55802535",
@@ -71,7 +101,7 @@ export const offerAndCardData = [
     heading: "Phoenix",
     countryFlag: usaFlag,
     popularity: 65,
-    cardBg: "bg-gradient-offer-walls-4",
+    cardBg: "gradient-offer-walls-4",
   },
   {
     id: "5580289",
@@ -80,7 +110,7 @@ export const offerAndCardData = [
     heading: "Connect People",
     countryFlag: usaFlag,
     popularity: 65,
-    cardBg: "bg-gradient-offer-walls-3",
+    cardBg: "gradient-offer-walls-3",
   },
   {
     id: "55802754",
@@ -89,7 +119,7 @@ export const offerAndCardData = [
     heading: "Spybats",
     countryFlag: usaFlag,
     popularity: 40,
-    cardBg: "bg-gradient-offer-walls-1",
+    cardBg: "gradient-offer-walls-1",
   },
   {
     id: "55802254",
@@ -98,7 +128,7 @@ export const offerAndCardData = [
     heading: "Firefly",
     countryFlag: usaFlag,
     popularity: 41,
-    cardBg: "bg-gradient-offer-walls-3",
+    cardBg: "gradient-offer-walls-3",
   },
   {
     id: "55802452",
@@ -107,7 +137,7 @@ export const offerAndCardData = [
     heading: "Circuit",
     countryFlag: usaFlag,
     popularity: 80,
-    cardBg: "bg-gradient-offer-walls-2",
+    cardBg: "gradient-offer-walls-2",
   },
   {
     id: "55802542",
@@ -116,7 +146,7 @@ export const offerAndCardData = [
     heading: "Connect People",
     countryFlag: usaFlag,
     popularity: 10,
-    cardBg: "bg-gradient-offer-walls-4",
+    cardBg: "gradient-offer-walls-4",
   },
   {
     id: "55802542",
@@ -125,7 +155,7 @@ export const offerAndCardData = [
     heading: "Phoenix",
     countryFlag: usaFlag,
     popularity: 60,
-    cardBg: "bg-gradient-offer-walls-5",
+    cardBg: "gradient-offer-walls-5",
   },
   {
     id: "5580254215",
@@ -134,7 +164,7 @@ export const offerAndCardData = [
     heading: "Triangle",
     countryFlag: usaFlag,
     popularity: 80,
-    cardBg: "bg-gradient-offer-walls-3",
+    cardBg: "gradient-offer-walls-3",
   },
   {
     id: "5580254245",
@@ -143,6 +173,33 @@ export const offerAndCardData = [
     heading: "Spybats",
     countryFlag: usaFlag,
     popularity: 50,
-    cardBg: "bg-gradient-offer-walls-1",
+    cardBg: "gradient-offer-walls-1",
+  },
+];
+
+export const watchVideoData = [
+  {
+    id: 54801,
+    cardImage: watchVideo1,
+    cardHeading: "Watch Videos",
+    cardText: "Watch unlimited videos.",
+    btnText: "Watch Videos Start Earning",
+    cardBg: "gradient-featured-offer-watch-video-1",
+  },
+  {
+    id: 54801,
+    cardImage: watchVideo2,
+    cardHeading: "Referrals",
+    cardText: "Get your referral link and invite friends.",
+    btnText: "Invite Now",
+    cardBg: "gradient-featured-offer-watch-video-2",
+  },
+  {
+    id: 54801,
+    cardImage: watchVideo3,
+    cardHeading: "Promotions",
+    cardText: "Do Idle-Empire special promotions.",
+    btnText: "Watch Videos Start Earning",
+    cardBg: "gradient-featured-offer-watch-video-3",
   },
 ];

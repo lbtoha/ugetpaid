@@ -9,9 +9,11 @@ const SocialIcon = ({ iconName, link }: Props) => {
   return (
     <Link
       href={link}
-      className="group flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-C000000 p-[13px] hover:border-CE0E4FF hover:bg-CFFFFFF md:h-S50 md:w-S50"
+      className="group custom-transition-button flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-C000000 p-[13px] hover:border-CE0E4FF hover:bg-CFFFFFF md:h-S50 md:w-S50"
     >
-      <i className={`fa-brands group-hover:text-C02835B fa-${iconName}`}></i>
+      <i
+        className={`fa-brands custom-transition group-hover:text-C02835B fa-${iconName}`}
+      ></i>
     </Link>
   );
 };
