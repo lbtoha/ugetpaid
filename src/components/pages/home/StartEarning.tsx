@@ -28,11 +28,11 @@ export const StartEarning = () => {
                 may do so without cost for their whole lives. On the internet,
                 anybody can sign up and start making money right away at no
                 cost.
-                <p className="mt-3 xxl:mt-5">
-                  Participating in our online paid surveys does not need any
-                  prior expertise on your part in any way. We are just
-                  interested in hearing your completely honest opinion.
-                </p>
+              </p>
+              <p className="mt-3 xxl:mt-5">
+                Participating in our online paid surveys does not need any prior
+                expertise on your part in any way. We are just interested in
+                hearing your completely honest opinion.
               </p>
             </div>
           </div>

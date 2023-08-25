@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <div className="section-gap">
@@ -8,13 +10,13 @@ const Footer = () => {
         <div>
           <ul className="flex items-center gap-x-5">
             <li>
-              <button>Security</button>
+              <Link href="#">Security</Link>
             </li>
             <li>
-              <button>Terms</button>
+              <Link href="#">Terms</Link>
             </li>
             <li>
-              <button>Privacy</button>
+              <Link href="#">Privacy</Link>
             </li>
           </ul>
         </div>

@@ -22,10 +22,6 @@ const jost = Jost({
   variable: "--sub-font",
   weight: ["300", "400", "600", "700"],
 });
-// export const metadata: Metadata = {
-//   title: "Home | UGETPAID",
-//   description: "NextJs Template",
-// };
 
 interface MenuContextValue {
   menuOpen: boolean;
@@ -52,6 +48,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <title>Home | UGETPAID</title>
+      </head>
       <body
         className={`relative ${jost.variable} ${inter.variable} relative bg-C1A1F2C  font-inter text-base text-CFFFFFF `}
       >

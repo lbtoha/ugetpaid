@@ -4,14 +4,14 @@ import SocialSection from "@/components/shared/SocialSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Earn-2 | UGETPAID",
+  title: "Earn Point | UGETPAID",
   description: "NextJs Template",
 };
 
 const Earn2 = () => {
   return (
     <>
-      <PageNavigationHeader title="Earn Point" items={["Home", "Earn"]} />
+      <PageNavigationHeader title="Earn Point" items={["Home", "Earn Point"]} />
       <Earn2SurveyCards />
       <SocialSection />
     </>

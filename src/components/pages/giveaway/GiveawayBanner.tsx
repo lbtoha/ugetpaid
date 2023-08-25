@@ -45,13 +45,15 @@ const GiveawayBanner = () => {
         <div className="giveawayBanner__priceing mx-auto mt-10 flex w-5/6 justify-center py-3 text-center sm:py-5 md:py-10 lg:mt-S60 lg:w-2/3 xxl:w-1/2 ">
           <Swiper
             pagination={{
-              el: ".swiper-pagination",
+              el: ".custom-pagination",
               type: "bullets",
+              bulletClass: "banner-slider-bullet",
+              bulletActiveClass: "banner-slider-bullet-active",
               clickable: true,
             }}
             navigation={{
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
+              nextEl: ".banner-slider-next",
+              prevEl: ".banner-slider-prev",
             }}
             modules={[Pagination, Navigation]}
             className="mySwiper"
@@ -148,12 +150,12 @@ const GiveawayBanner = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className="relative mx-auto mt-10 flex max-w-[300px] items-center justify-center gap-20">
-          <button className="swiper-button-prev flex h-[30px] w-[30px] rotate-180 items-center justify-center rounded-[15px]">
+        <div className="relative mx-auto mt-10 flex max-w-[300px] items-center justify-center gap-5">
+          <button className="banner-slider-prev flex min-h-[30px] min-w-[30px] items-center justify-center rounded-[15px] bg-C2A3247 hover:bg-C206C55">
             <i className="icon-b-arrow-second text-white"></i>
           </button>
-          <div className="swiper-pagination"></div>
-          <button className="swiper-button-next flex h-[30px] w-[30px] rotate-180 items-center justify-center rounded-[15px]">
+          <div className="custom-pagination w-fit"></div>
+          <button className="banner-slider-next flex min-h-[30px] min-w-[30px] rotate-180 items-center justify-center rounded-[15px] bg-C2A3247 hover:bg-C206C55">
             <i className="icon-b-arrow-second text-white"></i>
           </button>
         </div>

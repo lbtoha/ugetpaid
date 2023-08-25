@@ -7,7 +7,7 @@ import SocialSection from "@/components/shared/SocialSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "EARN1 | UGETPAID",
+  title: "EARN | UGETPAID",
   description: "NextJs Template",
 };
 

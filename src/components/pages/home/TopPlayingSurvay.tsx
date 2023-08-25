@@ -23,7 +23,7 @@ const TopPlayingSurvey = () => {
       </div>
       <div className="mt-10 grid-cols-12 grid-rows-2 items-center gap-5 max-xl:space-y-5 md:mt-S60 xl:grid xxl:gap-6">
         <motion.div
-          whileHover={{ scale: 1.02 }}
+          whileHover={{ scale: 1.02, transition: { duration: 0.4 } }}
           className="col-start-1 col-end-7 row-span-2 grid-cols-3 items-center rounded-[20px] bg-C2E3549 pt-S70 max-xl:py-S30 sm:max-xl:grid xl:h-full xxl:col-end-6 3xl:col-start-2 3xl:col-end-6"
         >
           <Image
@@ -48,7 +48,7 @@ const TopPlayingSurvey = () => {
           </div>
         </motion.div>
         <motion.div
-          whileHover={{ scale: 1.02 }}
+          whileHover={{ scale: 1.02, transition: { duration: 0.4 } }}
           className="col-start-7 col-end-13 row-start-1 row-end-2 grid-cols-3 items-center  gap-x-S30 rounded-[20px] bg-C2E3549 py-S30 pe-5 max-sm:px-S15 sm:grid xl:h-full xxl:col-start-6 3xl:col-start-6 3xl:col-end-12"
         >
           <Image
@@ -69,7 +69,7 @@ const TopPlayingSurvey = () => {
           </div>
         </motion.div>
         <motion.div
-          whileHover={{ scale: 1.02 }}
+          whileHover={{ scale: 1.02, transition: { duration: 0.4 } }}
           className="col-start-7 col-end-13 row-start-2 row-end-3 grid-cols-3 items-center gap-x-S30 rounded-[20px] bg-C2E3549 py-S30 pb-10 pe-5 max-sm:px-S15 sm:grid xl:h-full xxl:col-start-6 3xl:col-start-6 3xl:col-end-12"
         >
           <Image

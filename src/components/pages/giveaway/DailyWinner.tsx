@@ -30,8 +30,8 @@ const DailyWinner = () => {
               clickable: true,
             }}
             navigation={{
-              prevEl: prevRef.current,
-              nextEl: nextRef.current,
+              nextEl: ".custom-button-daily-winners-next",
+              prevEl: ".custom-button-daily-winners-prev",
             }}
             modules={[Navigation]}
             className="mySwiper"
@@ -64,16 +64,10 @@ const DailyWinner = () => {
           </Swiper>
         </div>
         <div className="absolute top-[190px] inline-flex w-full items-center justify-between gap-3.5 px-[30px] lg:top-[297px]">
-          <button
-            ref={prevRef}
-            className="flex h-[30px] w-[30px] items-center justify-center rounded-[15px] bg-C2A3247 p-2 hover:bg-C206C55"
-          >
+          <button className="custom-button-daily-winners-prev flex h-[30px] w-[30px] items-center justify-center rounded-[15px] bg-C2A3247 p-2 hover:bg-C206C55">
             <i className="icon-b-arrow-second" aria-hidden="true"></i>
           </button>
-          <button
-            ref={nextRef}
-            className="flex h-[30px] w-[30px] rotate-180 items-center justify-center rounded-[15px] bg-C2A3247 p-2 hover:bg-C206C55"
-          >
+          <button className="custom-button-daily-winners-next flex h-[30px] w-[30px] rotate-180 items-center justify-center rounded-[15px] bg-C2A3247 p-2 hover:bg-C206C55">
             <i className="icon-b-arrow-second" aria-hidden="true"></i>
           </button>
         </div>

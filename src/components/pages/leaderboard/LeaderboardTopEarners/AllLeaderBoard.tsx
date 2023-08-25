@@ -2,6 +2,7 @@ import { closeIcon } from "@/components/shared/ModalCloseIcon";
 import { crownCardData, leaderListData } from "@/public/data/LeaderBoard";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
+import Pagination from "react-custom-pagination";
 import Modal from "react-responsive-modal";
 import { v4 as uuidv4 } from "uuid";
 import LeaderBoardCrownCard from "./LeaderBoardCrownCard";
@@ -10,6 +11,17 @@ import LeaderBoardModal from "./LeaderBoardModal";
 
 const AllLeaderBoard = () => {
   const [open, setOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1); //page
+  const [postsPerPage] = useState(5); //no of posts you want to render in one page
+
+  //get current Posts
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = leaderListData.slice(indexOfFirstPost, indexOfLastPost);
+
+  const paginate = (number: number) => {
+    setCurrentPage(number);
+  };
 
   return (
     <div className="mt-10">
@@ -39,7 +51,7 @@ const AllLeaderBoard = () => {
         transition={{ duration: 0.5 }}
         className="mt-S60 space-y-5"
       >
-        {leaderListData.map(({ image, name, point, bonus, coin, position }) => (
+        {currentPosts.map(({ image, name, point, bonus, coin, position }) => (
           <div
             key={uuidv4()}
             onClick={() => setOpen(true)}
@@ -67,6 +79,20 @@ const AllLeaderBoard = () => {
       >
         <LeaderBoardModal />
       </Modal>
+      <div className="mx-auto mt-S60 max-w-[320px]  font-bold">
+        <Pagination
+          totalPosts={leaderListData.length}
+          postsPerPage={postsPerPage}
+          paginate={paginate}
+          view={5}
+          color={"white"}
+          selectColor={"#00FF8B"}
+          boxRadius={"15px"}
+          bgColor={"#2C3346"}
+          boxHeight={50}
+          boxWidth={50}
+        />
+      </div>
     </div>
   );
 };

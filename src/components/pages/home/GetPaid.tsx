@@ -23,7 +23,7 @@ const GetPaid = () => {
               <span className="block text-2.3xl text-C00FF8B md:text-4xl 3xl:text-7xl">
                 Get Paid for{" "}
               </span>
-              <span className="block text-2.3xl max-md:pt-2 md:text-4xl 3xl:text-7xl">
+              <div className="block text-2.3xl max-md:pt-2 md:text-4xl 3xl:text-7xl">
                 <Typewriter
                   options={{
                     strings: ["Taking Surveys"],
@@ -31,12 +31,12 @@ const GetPaid = () => {
                     loop: true,
                   }}
                 />
-              </span>
+              </div>
             </h1>
-            <p className="mt-4 max-w-[533px] text-lg max-xl:leading-[140%] md:text-xl xl:text-2xl xxl:mt-6">
+            <p className="mt-4 max-w-[533px] text-lg max-xl:leading-[140%] md:text-xl xl:text-2xl xxl:mt-5">
               Get up to $7.5 for each survey,Safe and easy payment
             </p>
-            <div className="mt-[30px]">
+            <div className="mt-S30">
               <PrimaryButton buttonText="Start Earning" />
             </div>
           </div>

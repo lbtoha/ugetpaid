@@ -11,12 +11,12 @@ const LatestActiveSlider = () => {
     <Swiper
       modules={[Autoplay]}
       slidesPerView={"auto"}
-      spaceBetween={3}
-      speed={5000}
+      spaceBetween={10}
+      speed={6000}
       loop={true}
       autoplay={{
-        delay: 0,
-        // disableOnInteraction: false,
+        delay: 1,
+        disableOnInteraction: false,
       }}
       breakpoints={{
         576: {
@@ -25,15 +25,19 @@ const LatestActiveSlider = () => {
 
         992: {
           slidesPerView: 3,
+          spaceBetween: 15,
         },
         1200: {
           slidesPerView: 4,
+          spaceBetween: 24,
         },
         1400: {
           slidesPerView: 5,
+          spaceBetween: 24,
         },
         1650: {
           slidesPerView: 6,
+          spaceBetween: 24,
         },
       }}
     >

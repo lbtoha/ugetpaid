@@ -20,16 +20,10 @@ const TopWinner = () => {
             Top winners last 24 hours
           </h2>
           <div className=" flex items-center justify-center gap-5">
-            <button
-              ref={prevRef}
-              className="flex h-[30px] w-[30px] items-center justify-center rounded-[15px] bg-C2A3247 p-2 hover:bg-C206C55"
-            >
+            <button className="custom-button-prev flex h-[30px] w-[30px] items-center justify-center rounded-[15px] bg-C2A3247 p-2 hover:bg-C206C55">
               <i className="icon-b-arrow-second" aria-hidden="true"></i>
             </button>
-            <button
-              ref={nextRef}
-              className="flex h-[30px] w-[30px] rotate-180 items-center justify-center rounded-[15px] bg-C2A3247 p-2 hover:bg-C206C55"
-            >
+            <button className="custom-button-next flex h-[30px] w-[30px] rotate-180 items-center justify-center rounded-[15px] bg-C2A3247 p-2 hover:bg-C206C55">
               <i className="icon-b-arrow-second" aria-hidden="true"></i>
             </button>
           </div>
@@ -40,8 +34,8 @@ const TopWinner = () => {
             slidesPerView={1}
             spaceBetween={3}
             navigation={{
-              prevEl: prevRef.current,
-              nextEl: nextRef.current,
+              nextEl: ".custom-button-next",
+              prevEl: ".custom-button-prev",
             }}
             className="mySwiper"
             onSwiper={(swiper) => console.log(swiper)}

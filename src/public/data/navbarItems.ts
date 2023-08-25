@@ -10,6 +10,7 @@ export const navItemsData = [
     iconName: "icon-e-earn",
     menuTitle: "Earn",
     linkUrl: "/earn1",
+    parentUrl: "/earn1/",
   },
   {
     id: 12055,

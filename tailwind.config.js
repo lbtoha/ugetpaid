@@ -278,6 +278,9 @@ module.exports = {
         ".custom-transition-fade": {
           transition: "all .2s ease-in-out",
         },
+        ".custom-transition-fade-1s": {
+          transition: "all .7s ease-in-out",
+        },
         ".custom-transition-button": {
           transition: "all 0.15s ease-in-out",
         },

@@ -51,8 +51,8 @@ const WhatPeople = () => {
               spaceBetween: 24,
             },
           }}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log()}
+          onSwiper={(swiper) => console.log()}
         >
           {whatPeopleCardData.map(
             ({

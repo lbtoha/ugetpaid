@@ -3,7 +3,6 @@ import { Tab } from "@headlessui/react";
 import Countdown from "react-countdown";
 import ShowCountDown from "../ShowCountDown";
 import AllLeaderBoard from "./AllLeaderBoard";
-import Pagination from "./Pagination";
 
 const LeaderBoardTopEarners = () => {
   return (
@@ -83,9 +82,6 @@ const LeaderBoardTopEarners = () => {
             </Tab.Panel>
           </Tab.Panels>
         </Tab.Group>
-        <div className=" mx-auto mt-S60  max-w-[320px]">
-          <Pagination />
-        </div>
       </div>
     </section>
   );

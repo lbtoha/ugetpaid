@@ -45,10 +45,10 @@ const OfferWallCardDetails = ({
           onClick={() => setOpen(true)}
           className="shadow-[0px  4px 16px 0px rgba(0, 0, 0, 0.25)] cursor-pointer rounded-xl bg-C09B65E px-3 py-1 text-center text-sm font-bold text-C282F41 max-sm:w-[200px] sm:w-fit sm:px-5 sm:py-[10px]"
         >
-          <p className="text-xl font-semibold sm:text-2xl xl:text-2.3xl">
+          <span className="text-xl font-semibold sm:text-2xl xl:text-2.3xl">
             {offerPoint}
-          </p>
-          <p className="font-bold">Offer Point</p>
+          </span>
+          <span className="font-bold">Offer Point</span>
         </button>
       </div>
       <Modal
