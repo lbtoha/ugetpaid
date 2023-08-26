@@ -58,7 +58,7 @@ const FeaturedOffer = () => {
         <div className="grid grid-cols-12 justify-items-center">
           <div className="col-start-1 col-end-13 min-[2000px]:col-start-2 min-[2000px]:col-end-12">
             {/* grid-cols-1 sm:max-xl:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4 4xl:grid-cols-5 */}
-            <div className="flex items-center justify-center gap-6 max-4xl:flex-wrap ">
+            <div className="flex items-center justify-center gap-3 max-4xl:flex-wrap md:gap-6 ">
               {featureCardData.map(({ id, cardTitle, cardImage }) => (
                 <div
                   key={uuidv4()}

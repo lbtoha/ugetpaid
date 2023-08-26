@@ -9,7 +9,7 @@ type Props = {
 
 const Tips = ({ title, tipsList }: Props) => {
   return (
-    <div className="mt-S30 flex justify-start gap-3 rounded-[15px] border border-C515B78 bg-transparent p-S30 max-sm:flex-wrap sm:gap-5 md:mt-10">
+    <div className="mt-5 flex justify-start gap-3 rounded-[15px] border border-C515B78 bg-transparent p-S30 max-sm:flex-wrap sm:gap-5 md:mt-8 xl:mt-10">
       <div className="inline-flex h-[60px] w-[60px] items-center justify-center rounded-[30px] bg-C2E3549 p-[15px]">
         <Image src={light} alt="Light" width={30} className="min-w-[30px]" />
       </div>

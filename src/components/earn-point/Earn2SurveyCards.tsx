@@ -59,7 +59,7 @@ const Earn2SurveyCards = () => {
   ];
   return (
     <div className="mt-4 md:mt-7 xl:mt-10">
-      <div className="grid grid-cols-1 items-stretch justify-between gap-5 sm:grid-cols-2 xl:grid-cols-3 xl:gap-6">
+      <div className="grid grid-cols-1 items-stretch justify-between gap-3 sm:grid-cols-2 md:gap-5 xl:grid-cols-3 xl:gap-6">
         {Earn2CardData.map(
           ({ id, cardImage, cardHeading, cardBg, cardText, btnText }) => (
             <BigCard

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const LeaderBoardBanner = () => {
   return (
-    <div className="leaderboard mt-S30">
+    <div className="leaderboard mt-S15 xl:mt-S30">
       <div className="pt-S80">
         <div className="leaderboard__priceing mx-auto flex w-5/6 items-center justify-center text-center lg:w-3/4 xxl:w-1/2 ">
           <div>

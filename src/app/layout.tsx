@@ -57,7 +57,7 @@ export default function RootLayout({
         <MenuIsOpenOrNot.Provider value={{ menuOpen, setMenuOpen }}>
           <Navbar />
           <div
-            className={`custom-transition px-2 pt-20 sm:px-5 md:pt-[100px] ${
+            className={`custom-transition px-2 pt-[75px] sm:pt-[89px] md:px-3 ${
               menuOpen
                 ? "md:ml-[240px] md:w-[calc(100%-240px)]"
                 : "md:ml-[150px] md:w-[calc(100%-150px)]"

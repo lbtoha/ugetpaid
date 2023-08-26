@@ -28,11 +28,11 @@ const HowGetPaid = () => {
   ];
   return (
     <section className="section-gap">
-      <div className="rounded-xl border border-C47506A px-5 py-10 focus-visible:hidden md:max-xl:py-S60  lg:pl-S60 xl:py-S120">
+      <div className="rounded-xl border border-C47506A px-3 py-10 focus-visible:outline-none md:px-5 md:max-xl:py-S60 lg:pl-S60 xl:py-S120">
         <Tab.Group>
           <div className="grid-cols-12 items-center justify-between max-xl:space-y-5 xl:grid">
-            <Tab.List className="col-span-5 space-y-5">
-              <div className="xl:mb-10">
+            <Tab.List className="col-span-5 space-y-3 md:space-y-5">
+              <div className="mb-5 md:mb-10">
                 <HomeHeading
                   subHeading="Getting started is simple"
                   heading="How to Get Paid to Take Surveys"
@@ -44,7 +44,7 @@ const HowGetPaid = () => {
                 <Tab key={uuidv4()} as={Fragment}>
                   {({ selected }) => (
                     <div
-                      className={`group custom-transition w-full cursor-pointer rounded-xl border border-C2E3549 hover:bg-C185330 focus-visible:hidden ${
+                      className={`group custom-transition w-full cursor-pointer rounded-xl border border-C2E3549 hover:bg-C185330 focus-visible:outline-none ${
                         selected ? "bg-C185330 " : ""
                       }`}
                     >

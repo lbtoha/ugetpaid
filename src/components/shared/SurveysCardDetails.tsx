@@ -11,7 +11,7 @@ type Props = {
 
 const SurveysCardDetails = ({ cardImage, cardTitle, detailText }: Props) => {
   return (
-    <div className="flex items-center gap-x-[85px] rounded-[10px] bg-C2E3549 p-5 max-lg:flex-wrap max-lg:space-y-5 md:p-S30 lg:justify-between">
+    <div className="flex items-center gap-x-[85px] rounded-[10px] bg-C2E3549 p-3 max-lg:flex-wrap max-lg:space-y-5 sm:p-5 md:p-S30 lg:justify-between">
       <div className="flex gap-x-S30 max-md:flex-wrap">
         <div className="min-w-fit max-md:mb-4">
           <Image src={cardImage} alt="Surveys 1" />

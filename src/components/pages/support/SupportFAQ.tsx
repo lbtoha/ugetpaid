@@ -13,12 +13,12 @@ const SupportFAQ = () => {
   return (
     <section className="section-gap">
       <div className="grid-cols-12 3xl:grid">
-        <div className="col-start-3 col-end-11 mx-auto space-y-S60 bg-C22293A max-md:px-3 max-md:py-S30 md:p-S60 4xl:min-w-[980]">
+        <div className="col-start-3 col-end-11 mx-auto space-y-5 bg-C22293A max-md:px-3 max-md:py-S30 md:space-y-10 md:p-S60 xl:space-y-S60 4xl:min-w-[980]">
           <div className="space-y-S10">
             <p className="text-center text-2xl font-semibold leading-[33.60px] text-C00FF8B">
               Questions and Answer
             </p>
-            <h2 className=" text-center text-3xl font-semibold leading-[52px] md:text-[40px]">
+            <h2 className=" text-center text-2xl font-semibold leading-[52px] sm:text-3xl md:text-[40px]">
               Frequently Asked Questions
             </h2>
             <div className="mx-auto max-w-[704px] text-center">
@@ -36,14 +36,14 @@ const SupportFAQ = () => {
             </div>
           </div>
           <Tab.Group>
-            <Tab.List className="mx-auto flex max-w-[980px] flex-wrap items-center justify-center gap-2.5 rounded-[15px] border border-[#5D6888] p-2.5 ">
+            <Tab.List className="mx-auto flex max-w-[980px] flex-wrap justify-center gap-2.5 rounded-[15px] border border-[#5D6888] p-2.5 max-sm:flex-col sm:items-center ">
               <Tab as={Fragment}>
                 {({ selected }) => (
                   <button
                     className={`custom-transition-button h-[51px] rounded-[10px] px-[30px] py-[15px]  text-center  text-sm font-bold leading-[21px] ${
                       selected
-                        ? "bg-green-500 text-C1A1F2C focus-visible:hidden"
-                        : "bg-C373F56 hover:bg-green-500"
+                        ? "bg-C09B65E text-C1A1F2C hover:bg-C373F56 hover:text-white focus-visible:outline-none"
+                        : "bg-C373F56 hover:bg-C09B65E hover:text-C1A1F2C"
                     }`}
                   >
                     FAQs
@@ -53,10 +53,10 @@ const SupportFAQ = () => {
               <Tab as={Fragment}>
                 {({ selected }) => (
                   <button
-                    className={`h-[51px] rounded-[10px] px-[30px]  py-[15px]  text-center text-sm font-bold leading-[21px] ${
+                    className={`custom-transition-button h-[51px] rounded-[10px]  px-[30px] py-[15px] text-center text-sm font-bold leading-[21px] ${
                       selected
-                        ? "bg-green-500 text-C1A1F2C focus-visible:hidden"
-                        : "bg-C373F56"
+                        ? "bg-C09B65E text-C1A1F2C hover:bg-C373F56 hover:text-white focus-visible:outline-none"
+                        : "bg-C373F56 hover:bg-C09B65E hover:text-C1A1F2C"
                     }`}
                   >
                     Redeeming Your Coins
@@ -66,10 +66,10 @@ const SupportFAQ = () => {
               <Tab as={Fragment}>
                 {({ selected }) => (
                   <button
-                    className={`h-[51px] rounded-[10px] px-[30px]  py-[15px]  text-center text-sm font-bold leading-[21px] ${
+                    className={`custom-transition-button h-[51px] rounded-[10px] px-[30px]  py-[15px]  text-center text-sm font-bold leading-[21px] ${
                       selected
-                        ? "bg-green-500 text-C1A1F2C focus-visible:hidden "
-                        : "bg-C373F56"
+                        ? "bg-C09B65E text-C1A1F2C hover:bg-C373F56 hover:text-white focus-visible:outline-none"
+                        : "bg-C373F56 hover:bg-C09B65E hover:text-C1A1F2C"
                     }`}
                   >
                     Earning Coins
@@ -79,10 +79,10 @@ const SupportFAQ = () => {
               <Tab as={Fragment}>
                 {({ selected }) => (
                   <button
-                    className={`h-[51px] rounded-[10px] px-[30px]  py-[15px]  text-center text-sm font-bold leading-[21px] ${
+                    className={`custom-transition-button h-[51px] rounded-[10px] px-[30px]  py-[15px]  text-center text-sm font-bold leading-[21px] ${
                       selected
-                        ? "bg-green-500 text-C1A1F2C focus-visible:hidden"
-                        : "bg-C373F56"
+                        ? "bg-C09B65E text-C1A1F2C hover:bg-C373F56 hover:text-white focus-visible:outline-none"
+                        : "bg-C373F56 hover:bg-C09B65E hover:text-C1A1F2C"
                     }`}
                   >
                     Policies
@@ -92,10 +92,10 @@ const SupportFAQ = () => {
               <Tab as={Fragment}>
                 {({ selected }) => (
                   <button
-                    className={`h-[51px] rounded-[10px] px-[30px]  py-[15px]  text-center text-sm font-bold leading-[21px] ${
+                    className={`custom-transition-button h-[51px] rounded-[10px] px-[30px]  py-[15px]  text-center text-sm font-bold leading-[21px] ${
                       selected
-                        ? "bg-green-500 text-C1A1F2C focus-visible:hidden"
-                        : "bg-C373F56"
+                        ? "hover:text-whiten bg-C09B65E text-C1A1F2C hover:bg-C373F56 hover:text-white focus-visible:outline-none"
+                        : "bg-C373F56 hover:bg-C09B65E hover:text-C1A1F2C"
                     }`}
                   >
                     Account
@@ -105,10 +105,10 @@ const SupportFAQ = () => {
               <Tab as={Fragment}>
                 {({ selected }) => (
                   <button
-                    className={`h-[51px] rounded-[10px] px-[30px]  py-[15px]  text-center text-sm font-bold leading-[21px] ${
+                    className={`custom-transition-button h-[51px] rounded-[10px] px-[30px]  py-[15px]  text-center text-sm font-bold leading-[21px] ${
                       selected
-                        ? "bg-green-500 text-C1A1F2C focus-visible:hidden"
-                        : "bg-C373F56"
+                        ? "bg-C09B65E text-C1A1F2C hover:bg-C373F56 hover:text-white focus-visible:outline-none"
+                        : "bg-C373F56 hover:bg-C09B65E hover:text-C1A1F2C"
                     }`}
                   >
                     Policies

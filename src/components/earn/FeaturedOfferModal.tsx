@@ -13,7 +13,7 @@ const FeaturedOfferModal = () => {
           <Image src={modalImage} alt="Modal Image" />
           <p className="text-2xl">Hexagon</p>
         </div>
-        <div className="flex gap-5 max-md:flex-wrap">
+        <div className="flex gap-3 max-md:flex-wrap sm:gap-5">
           <div className="flex items-center gap-S10 max-md:flex-wrap">
             <div className="flex items-center gap-x-S10  rounded-[10px] border border-C0E311F border-opacity-80 bg-C09B65E bg-opacity-10 px-S10 py-[5px] ">
               <Image
@@ -43,7 +43,7 @@ const FeaturedOfferModal = () => {
           <SecondaryButton buttonText="Start Offer" />
         </div>
       </div>
-      <div className="content-box mt-10 rounded-[15px] border border-C575988 bg-C2F304A p-3 sm:p-S30">
+      <div className="content-box mt-5 rounded-[15px] border border-C575988 bg-C2F304A p-3 sm:mt-10 sm:p-S30">
         <p className="text-2xl">Description</p>
         <p className="mt-4 text-sm leading-[150%] text-CBDC4DA">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
@@ -51,7 +51,7 @@ const FeaturedOfferModal = () => {
           Vulputate interdum commodo enim ipsum cras aliquam. Viverra ut
           molestie nisl consectetur tristique.
         </p>
-        <p className="mt-S30 text-2xl">Requirements</p>
+        <p className=" mt-5 text-2xl md:mt-S30">Requirements</p>
         <ul className="mt-S15 space-y-S10">
           <li className="relative flex items-center ps-S15 text-sm text-CBDC4DA before:absolute before:left-0 before:z-10 before:h-[6px] before:w-[6px] before:rounded-[50%] before:bg-[#397D15] before:content-['']">
             Sed eget feugiat id massa. Risus ultricies feugiat amet ut lectus

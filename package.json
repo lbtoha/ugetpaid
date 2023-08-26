@@ -26,8 +26,8 @@
     "react": "18.2.0",
     "react-animate-height": "^3.2.2",
     "react-countdown": "^2.3.5",
-    "react-custom-pagination": "^1.6.8",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.4",
     "react-hot-toast": "^2.4.1",
     "react-range-slider-input": "^3.0.7",
     "react-responsive-modal": "^6.4.2",
@@ -39,6 +39,7 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.5",
     "prettier": "^3.0.2",
     "prettier-plugin-tailwindcss": "^0.5.3",
     "sass": "^1.64.2",

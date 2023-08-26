@@ -11,7 +11,7 @@ const WinnersDrawing = () => {
       <h2 className=" text-center text-[32px] font-semibold leading-[41.60px]">
         Winners Drawing In
       </h2>
-      <div className="mt-S60 grid grid-cols-1 items-center justify-start gap-6 md:grid-cols-2 xl:grid-cols-3 ">
+      <div className="mt-5 grid grid-cols-1 items-center justify-start gap-3 sm:mt-8 md:grid-cols-2 md:gap-6 lg:mt-10 xl:mt-S60 xl:grid-cols-3 ">
         {winnersDrawingData.map(({ image, price, time }) => (
           <WinnerDrawingCard key={uuidv4()} image={image} price={price}>
             {

@@ -20,7 +20,7 @@ const GiveawayBanner = () => {
 
   const [priceModalOpen, setPriceModalOpen] = useState(false);
   return (
-    <div className="giveawayBanner relative mt-S30">
+    <div className="giveawayBanner relative mt-5 md:mt-8 lg:mt-S30">
       <div className="pt-S60">
         <div>
           <p className="text-center text-2xl">You can win money</p>

@@ -11,7 +11,7 @@ const FeatureOfferSurveysModal = () => {
   return (
     <div className="rounded-[20px] bg-C3C3E5C p-5 sm:p-S30">
       <div className="flex items-center justify-between max-md:flex-wrap max-md:space-y-5 ">
-        <div className="flex items-center gap-x-5 ">
+        <div className="flex items-center gap-x-5 max-sm:flex-wrap ">
           <Image src={officeWall} alt="Modal Image" />
           <div>
             <p className="text-2xl">Hexagon</p>
@@ -32,7 +32,7 @@ const FeatureOfferSurveysModal = () => {
           </div>
         </div>
       </div>
-      <div className="content-box mt-11 space-y-S10 rounded-[15px] border-C575988 sm:border sm:bg-C404365 sm:p-S30 ">
+      <div className="content-box mt-5 space-y-S10 rounded-[15px] border-C575988 sm:mt-11 sm:border sm:bg-C404365 sm:p-S30 ">
         {/* modal items */}
 
         {modalData.map(({ id, cardImage, cardTitle, detailText }) => (

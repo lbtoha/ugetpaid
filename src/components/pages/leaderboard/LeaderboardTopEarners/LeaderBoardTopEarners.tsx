@@ -9,7 +9,7 @@ const LeaderBoardTopEarners = () => {
     <section className="section-gap">
       <div>
         <h5 className="text-center text-2xl text-C00FF8B">Leaderboard</h5>
-        <h2 className="mx-auto mt-S10 max-w-[561px] text-center text-3xl lg:text-4xl">
+        <h2 className="mx-auto max-w-[561px] text-center text-3xl sm:mt-S10 lg:text-4xl">
           The top earners are rewarded once every week!
         </h2>
         <p className="mx-auto mt-S10 max-w-[520px] text-center text-sm">
@@ -18,12 +18,12 @@ const LeaderBoardTopEarners = () => {
           leaderboard.
         </p>
         <Tab.Group>
-          <div className="mt-S60  flex justify-center">
+          <div className="mt-10 flex justify-center md:mt-S60">
             <Tab.List className="w-fit space-x-S10 rounded-[10px] border border-C3D4660 bg-transparent p-S10 ">
-              <Tab className="focus-visible:hidden">
+              <Tab className="focus-visible:outline-none">
                 {({ selected }) => (
                   <button
-                    className={`custom-transition-button rounded-[10px] px-10 py-S10 text-center font-bold leading-[150%] shadow-CSHADOW focus-visible:hidden ${
+                    className={`custom-transition-button rounded-[10px] px-10 py-S10 text-center font-bold leading-[150%] shadow-CSHADOW focus-visible:outline-none ${
                       selected
                         ? "bg-C09B65E text-C282F41 hover:bg-C373F56 hover:text-white"
                         : "bg-C373F56 hover:bg-C09B65E hover:text-C282F41"
@@ -33,10 +33,10 @@ const LeaderBoardTopEarners = () => {
                   </button>
                 )}
               </Tab>
-              <Tab className="focus-visible:hidden">
+              <Tab className="focus-visible:outline-none">
                 {({ selected }) => (
                   <button
-                    className={`custom-transition-button rounded-[10px] px-10 py-S10 text-center font-bold leading-[150%] shadow-CSHADOW focus-visible:hidden ${
+                    className={`custom-transition-button rounded-[10px] px-10 py-S10 text-center font-bold leading-[150%] shadow-CSHADOW focus-visible:outline-none ${
                       selected
                         ? "bg-C09B65E text-C282F41 hover:bg-C373F56 hover:text-CFFFFFF"
                         : "bg-C373F56 hover:bg-C09B65E hover:text-C282F41"

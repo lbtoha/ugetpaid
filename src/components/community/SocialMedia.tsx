@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 import SocialMediaCard from "./SocialMediaCard";
 const SocialMedia = () => {
   return (
-    <div className="mt-10 flex w-full items-start justify-center gap-5 max-3xl:flex-wrap 4xl:gap-[30px]">
+    <div className="mt-5 flex w-full items-start justify-center gap-3 max-3xl:flex-wrap md:mt-8 md:gap-5 lg:mt-10 4xl:gap-[30px]">
       {socialMediaData.map(
         ({ image, socialMediaName, socialMediaMember, color }) => (
           <SocialMediaCard

@@ -21,7 +21,7 @@ const TopPlayingSurvey = () => {
           paragraphWidth={534}
         />
       </div>
-      <div className="mt-10 grid-cols-12 grid-rows-2 items-center gap-5 max-xl:space-y-5 md:mt-S60 xl:grid xxl:gap-6">
+      <div className="mt-10 grid-cols-12 grid-rows-2 items-center gap-3 max-xl:space-y-5 md:mt-S60 md:gap-5 xl:grid xxl:gap-6">
         <motion.div
           whileHover={{ scale: 1.02, transition: { duration: 0.4 } }}
           className="col-start-1 col-end-7 row-span-2 grid-cols-3 items-center rounded-[20px] bg-C2E3549 pt-S70 max-xl:py-S30 sm:max-xl:grid xl:h-full xxl:col-end-6 3xl:col-start-2 3xl:col-end-6"
@@ -32,7 +32,7 @@ const TopPlayingSurvey = () => {
             className="col-span-1 max-sm:mx-auto max-sm:block"
           />
           <div className="col-start-2 col-end-4 max-sm:pt-10 xl:mt-S50">
-            <div className="gap-x-S30 px-S15 pb-S30 max-xl:items-center xl:flex xxl:px-10">
+            <div className="gap-x-S30 px-S15 max-xl:items-center xl:flex xl:pb-S30 xxl:px-10">
               <Icon iconImage={profileIcon1} />
               <div>
                 <p className="text-2xl max-xl:mt-S30 xl:text-2.3xl">

@@ -8,7 +8,7 @@ type Prop = {
 
 const Affiliates7DayCard = ({ days, coin }: Prop) => {
   return (
-    <div className="inline-flex shrink grow basis-0 flex-col items-center gap-2.5 rounded-[15px]  border border-C3B445E p-5">
+    <div className="inline-flex min-w-[150px] shrink grow basis-0 flex-col items-center gap-2.5 rounded-[15px] border  border-C3B445E p-5 sm:max-w-[160px]">
       <Image src={clock} alt="Clock" className="h-6 w-6" />
       <div className="flex flex-col items-center justify-center gap-[5px] self-stretch">
         <p className="self-stretch text-center font-semibold leading-snug">

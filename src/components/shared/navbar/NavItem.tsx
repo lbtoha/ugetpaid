@@ -25,7 +25,7 @@ const NavItem = ({
   const pathname = usePathname();
   // this line check those url who have at list two // in the path name. then check with the parentUrl
   const matchValue = pathname.match(/\/.*\//)?.[0];
-  console.log("matchValue", matchValue);
+
   return (
     <>
       {/* mobile menu item */}

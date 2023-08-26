@@ -1,5 +1,5 @@
 export const closeIcon = (
-  <span className="custom-icon rounded-full bg-C575988 p-2">
+  <span className="custom-icon custom-transition-button rounded-full bg-C575988 p-2 hover:bg-C333A4E">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       x="0px"

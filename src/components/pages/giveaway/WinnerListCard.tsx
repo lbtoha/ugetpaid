@@ -7,7 +7,7 @@ type Props = {
 
 const WinnerListCard = ({ winnerImage, winnerName, reward }: Props) => {
   return (
-    <div className="items-center justify-between gap-[103px] self-stretch rounded-[10px] bg-[#3B445E] p-5 max-sm:space-y-5 sm:flex">
+    <div className="items-center justify-between gap-[103px] self-stretch rounded-[10px] bg-[#3B445E] p-3 max-sm:space-y-5 sm:flex md:p-5">
       <div className="flex items-center gap-[15px]">
         <Image
           alt="Image"

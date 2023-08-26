@@ -1,15 +1,13 @@
 "use client";
 import MotionCardHoverEffect from "@/components/shared/MotionCardHoverEffect";
 import { whatPeopleCardData } from "@/public/data/home";
-import quotation from "@/public/images/icon/quotation.png";
 //@ts-ignore
-import { Rating } from "@smastrom/react-rating";
-import Image from "next/image";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { v4 as uuidv4 } from "uuid";
 import HomeHeading from "../../shared/HomeHeading";
+import WhatPeopleSliderCard from "./WhatPeopleSliderCard";
 
 const WhatPeople = () => {
   return (
@@ -22,29 +20,36 @@ const WhatPeople = () => {
           paragraphWidth={534}
         />
       </div>
-      <div className="mt-S60 ">
+      <div className="mt-3 md:mt-8">
         <Swiper
           modules={[Autoplay]}
-          spaceBetween={15}
           slidesPerView={1}
           loop={true}
-          // autoplay={{
-          //   delay: 2500,
-          // }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
           breakpoints={{
             576: {
               slidesPerView: 2,
+              spaceBetween: 15,
             },
 
             992: {
               slidesPerView: 2,
+              spaceBetween: 15,
             },
             1200: {
               slidesPerView: 3,
             },
+            1600: {
+              slidesPerView: 3,
+              spaceBetween: 24,
+            },
             1850: {
               slidesPerView: 4,
-              spaceBetween: 10,
+              spaceBetween: 24,
             },
             1880: {
               slidesPerView: 4,
@@ -67,51 +72,15 @@ const WhatPeople = () => {
             }) => (
               <SwiperSlide key={uuidv4()} className="my-5">
                 <MotionCardHoverEffect>
-                  <div className="relative rounded-[15px] bg-C2E3549 px-S15 py-10 xl:px-S30 ">
-                    <div className="flex items-center gap-x-5">
-                      <Image
-                        src={image}
-                        alt="active Image"
-                        className="h-S60 w-S60 rounded-full bg-C3E4762"
-                      />
-                      <div>
-                        <p className="text-xl">{name}</p>
-                        <p className="text-sm">{country}</p>
-                      </div>
-                    </div>
-                    <div>
-                      <p
-                        className="mt-6 text-2xl xxl:text-2.3xl"
-                        title={heading}
-                      >
-                        {heading}
-                      </p>
-                      <p className="mt-1 border-b border-b-C626F95 pb-6 text-base text-CBDC4DA xl:mt-S15 xl:text-lg">
-                        {paragraph.length > 70
-                          ? paragraph.substring(0, 70) + "..."
-                          : paragraph}
-                      </p>
-                    </div>
-                    <div className="flex items-center justify-between pt-6">
-                      <div>
-                        <Rating
-                          style={{ maxWidth: 100 }}
-                          value={rating}
-                          readOnly
-                          transition="none"
-                          spaceInside="none"
-                          radius="none"
-                          className="rating-star-style"
-                        />
-                      </div>
-                      <p className="text-sm">{ratingTime} hour ago</p>
-                    </div>
-                    <Image
-                      src={quotation}
-                      alt="Quotation"
-                      className="absolute right-[3%] top-[4%] w-[76px]"
-                    />
-                  </div>
+                  <WhatPeopleSliderCard
+                    image={image}
+                    name={name}
+                    country={country}
+                    heading={heading}
+                    paragraph={paragraph}
+                    rating={rating}
+                    ratingTime={ratingTime}
+                  />
                 </MotionCardHoverEffect>
               </SwiperSlide>
             ),

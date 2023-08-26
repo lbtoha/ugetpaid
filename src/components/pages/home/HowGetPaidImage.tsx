@@ -26,7 +26,7 @@ const HowGetPaidImage = ({ image, selected }: Props) => {
         alt="how work"
         width={600}
         height={600}
-        className={` mx-auto focus-visible:hidden max-xl:w-[50%]`}
+        className={` mx-auto focus-visible:outline-none max-xl:w-[50%]`}
       />
     </motion.div>
   );

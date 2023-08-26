@@ -4,7 +4,7 @@ import PrimaryButton from "../../shared/PrimaryButton";
 
 export const StartEarning = () => {
   return (
-    <section className="section-gap">
+    <section className="pt-5 md:pt-10 xl:pt-S60 xxl:pt-20">
       <div className="grid-cols-12 items-center justify-between space-y-7 sm:max-xl:space-y-10 xl:grid xl:space-x-6">
         <div className="col-start-1 col-end-8 xxl:col-start-2">
           <Image src={callAction} alt="Call action" className="mx-auto" />

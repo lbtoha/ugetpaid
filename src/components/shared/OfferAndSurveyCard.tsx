@@ -29,7 +29,7 @@ const OfferAndSurveyCard = ({
       }`}
     >
       <Image src={cardImage} alt="Offer wall image" />
-      <div>
+      <div className="flex flex-col">
         <p className="w-fit rounded-[10px] border border-C09B65E border-opacity-80 bg-C09B65E bg-opacity-10 px-S10 py-[5px] text-center">
           +{bonus}% Bonus
         </p>

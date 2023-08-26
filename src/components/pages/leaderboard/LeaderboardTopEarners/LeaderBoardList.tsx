@@ -21,10 +21,10 @@ const LeaderBoardList = ({
   return (
     <motion.div
       whileHover={{ scale: 1.01 }}
-      className="grid-cols-2 items-center justify-between gap-10 rounded-[20px] border border-C3D4660 bg-C1F2432 px-5 py-5 max-xl:flex-wrap max-lg:space-y-4 lg:grid xl:px-10"
+      className="grid-cols-2 items-center justify-between gap-10 rounded-[20px] border border-C3D4660 bg-C1F2432 px-3 py-3 max-xl:flex-wrap max-lg:space-y-4 sm:px-5 sm:py-5 lg:grid xl:px-10"
     >
-      <div className="flex space-x-S30 xl:space-x-S60">
-        <p className="flex items-center rounded-[15px] bg-C2C3346 px-S10 py-S15 text-center">
+      <div className="flex items-center space-x-5 sm:space-x-S30 xl:space-x-S60">
+        <p className="flex h-fit items-center  rounded-[15px] bg-C2C3346 px-S15 py-2.5 text-center">
           {position}
         </p>
         <div className="flex items-center gap-x-5">
@@ -34,7 +34,7 @@ const LeaderBoardList = ({
           </div>
         </div>
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between max-sm:ms-[60px] sm:max-lg:ms-[70px]">
         <div className="text-center">
           <p className="font-bold">{point}</p>
           <p className="text-xs leading-[150%] text-C00FF8B">Point</p>

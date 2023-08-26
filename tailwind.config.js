@@ -282,7 +282,7 @@ module.exports = {
           transition: "all .7s ease-in-out",
         },
         ".custom-transition-button": {
-          transition: "all 0.15s ease-in-out",
+          transition: "all 0.2s ease-in-out",
         },
         ".custom-fade": {
           transition: "opacity 5s ease-out",
@@ -309,8 +309,9 @@ module.exports = {
         },
       };
       addComponents(customComponent);
-      require("tailwind-scrollbar");
-      require("@headlessui/tailwindcss")({ prefix: "ui" });
     }),
+    require("tailwind-scrollbar"),
+    require("@tailwindcss/forms"),
+    require("@headlessui/tailwindcss")({ prefix: "ui" }),
   ],
 };

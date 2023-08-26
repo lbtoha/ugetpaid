@@ -34,6 +34,6 @@ input {
 @layer components {
   /* section top gap */
   .section-gap {
-    @apply pt-10 md:pt-[60px] xl:pt-[80px] xxl:pt-[120px];
+    @apply pt-10 md:pt-[60px] xl:pt-20 xxl:pt-[120px];
   }
 }

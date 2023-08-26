@@ -8,7 +8,7 @@ import ProfileInfoBtn from "./ProfileInfoBtn";
 
 const LeaderBoardModal = () => {
   return (
-    <div className=" rounded-[15px] bg-C222337 p-3 shadow md:p-S30">
+    <div className=" rounded-[15px] bg-C222337 p-3 shadow sm:p-5 md:p-S30">
       <p className="mb-S30 text-xl font-semibold leading-7 text-white">
         User Information
       </p>
@@ -51,7 +51,7 @@ const LeaderBoardModal = () => {
             Last 7 days
           </p>
         </div>
-        <div className="mt-10 h-[200px] w-[250px] sm:w-full">
+        <div className="mt-10 h-[200px] min-w-[250px] sm:w-full">
           <LineChartComponent />
         </div>
       </div>

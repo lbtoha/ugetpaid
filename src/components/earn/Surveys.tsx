@@ -23,7 +23,7 @@ const Surveys = () => {
           heading="Surveys"
           subHeading="Complete surveys to earn coins. You will be rewarded for each survey completed."
         />
-        <div className="group mt-8 grid gap-4 sm:grid-cols-2 md:mt-10 xl:mt-S60 xl:grid-cols-3 3xl:grid-cols-4 3xl:gap-6">
+        <div className="group mt-8 grid gap-3 sm:grid-cols-2 md:mt-10 xl:mt-S60 xl:grid-cols-3 3xl:grid-cols-4 3xl:gap-6">
           {showData.map(
             ({
               id,

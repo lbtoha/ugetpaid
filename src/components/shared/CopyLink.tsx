@@ -23,11 +23,11 @@ const CopyLink = ({ link, componentHeading }: Props) => {
   }
 
   return (
-    <div className="rounded-p-S15 inline-flex w-full gap-5 bg-C2E3549 p-5 sm:mt-6 sm:p-[30px]">
+    <div className="rounded-p-S15 mt-3 inline-flex w-full gap-5 bg-C2E3549 p-5 sm:p-[30px] md:mt-6">
       <div className="inline-flex shrink grow basis-0 flex-col gap-2">
         <p className="self-stretch">{componentHeading}</p>
         <div className="items-center gap-2.5  self-stretch max-xl:space-y-5 xl:inline-flex">
-          <div className="flex shrink grow basis-0 gap-2.5 rounded-[15px] border border-C3F4C70 px-2.5 py-1 md:py-4 xl:px-[30px]">
+          <div className="flex shrink grow basis-0 gap-2.5 rounded-[15px] border border-C3F4C70 px-2.5 py-3 md:py-4 xl:px-[30px]">
             <div className="grow basis-0">
               <span className="text-sm text-CBDC4DA">
                 Your referral code :{" "}

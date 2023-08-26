@@ -18,7 +18,9 @@ const OfferWallsSideCard = ({
   popularity,
 }: Props) => {
   return (
-    <div className={`border-C455070 bg-transparent py-S10 xl:border-t`}>
+    <div
+      className={`border-C455070 bg-transparent py-[6px] sm:py-S10 xl:border-t`}
+    >
       <div className="relative flex items-center gap-x-4 rounded-[15px] border-C455070 px-5 py-S15 hover:bg-C3D4661 max-4xl:flex-wrap max-xl:rounded-md max-xl:border">
         <Image
           src={cardImage}
@@ -28,7 +30,7 @@ const OfferWallsSideCard = ({
 
         <div>
           <p className="mt-S15 text-xl xxl:text-2xl">{heading}</p>
-          <div className="mt-S15">
+          <div className="sm:mt-S15">
             <div className="flex items-center gap-x-[5px] ">
               <p className="text-sx">Popularity</p>{" "}
               <Image src={countryFlag} alt="Flag" />

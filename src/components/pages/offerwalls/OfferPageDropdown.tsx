@@ -24,7 +24,7 @@ const OfferPageDropdown = ({
           {buttonSideText} {selectedOption}
           <span className="material-symbols-outlined">arrow_drop_down</span>
         </Listbox.Button>
-        <Listbox.Options className="absolute left-0 top-full min-w-full rounded-bl-[15px]  rounded-br-[15px] bg-C144339 px-S30 py-S10 pb-5">
+        <Listbox.Options className="absolute left-0 top-full z-[10] min-w-full  rounded-bl-[15px] rounded-br-[15px] bg-C144339 px-S30 py-S10 pb-5">
           {categoryArray.map(({ id, option }) => (
             <Listbox.Option
               className="mb-2 cursor-pointer border-b border-C1B5C4E pb-2  last-of-type:border-hidden"
