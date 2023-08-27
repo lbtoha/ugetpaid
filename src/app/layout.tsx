@@ -49,7 +49,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Home | UGETPAID</title>
+        <title>
+          UGETPAID | online survey for get paid website html template | NextJs
+          Template
+        </title>
       </head>
       <body
         className={`relative ${jost.variable} ${inter.variable} relative bg-C1A1F2C  font-inter text-base text-CFFFFFF `}

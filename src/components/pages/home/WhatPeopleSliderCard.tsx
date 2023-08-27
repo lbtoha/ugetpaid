@@ -26,11 +26,6 @@ const WhatPeopleSliderCard = ({
 }: Props) => {
   const [showText, setShowText] = useState<string>("");
 
-  //   useEffect(() => {
-  //     setShowText(paragraph);
-  //   }, []);
-
-  //   setShowText(paragraph.substring(0, 70));
   return (
     <div className="relative rounded-[15px] bg-C2E3549 px-S15 py-10 xl:px-S30 ">
       <div className="flex items-center gap-x-5">

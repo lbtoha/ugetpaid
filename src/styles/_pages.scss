@@ -5,6 +5,16 @@
   color: #00d675;
 }
 
+// top navbar message button
+.message-rating-star-style {
+  gap: 2px;
+  max-width: 19px;
+  svg {
+    stroke-width: 0%;
+    width: 15px;
+  }
+}
+
 .new-button {
   background: #333137;
   color: #fac400;
@@ -145,6 +155,11 @@
   .range-slider__range {
     border-radius: 6px;
   }
+}
+
+// offerwalls hexagon rewards section
+.offerWalls-scroll-bar::-webkit-scrollbar {
+  display: none;
 }
 
 // offer walls section and surveys section card background gradient

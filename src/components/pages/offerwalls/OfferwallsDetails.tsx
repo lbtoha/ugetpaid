@@ -59,7 +59,7 @@ const OfferwallsDetails = () => {
           sideCardData={sideCardData}
         />
       </div>
-      <div className="col-start-1 col-end-13 xl:col-start-4">
+      <div className="offerWalls-scroll-bar col-start-1 col-end-13 h-[700px] overflow-y-scroll xl:col-start-4">
         <div className="rounded-[15px] bg-C1B5C4E px-4 py-5 pb-5 sm:p-S30">
           <h2 className="pb-5 text-2xl sm:text-2.3xl">Hexagon Rewards</h2>
           <div className="flex justify-between border-t border-C267967 pt-5 sm:pt-8 lg:pt-10">

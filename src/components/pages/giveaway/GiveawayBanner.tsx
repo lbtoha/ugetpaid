@@ -150,7 +150,7 @@ const GiveawayBanner = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className="relative mx-auto mt-10 flex max-w-[300px] items-center justify-center gap-5">
+        <div className="relative mx-auto mt-10 flex max-w-[200px] items-center justify-center gap-5">
           <button className="banner-slider-prev flex min-h-[30px] min-w-[30px] items-center justify-center rounded-[15px] bg-C2A3247 hover:bg-C206C55">
             <i className="icon-b-arrow-second text-white"></i>
           </button>

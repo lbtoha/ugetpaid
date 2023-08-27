@@ -42,6 +42,7 @@ const WhatPeople = () => {
             },
             1200: {
               slidesPerView: 3,
+              spaceBetween: 15,
             },
             1600: {
               slidesPerView: 3,
