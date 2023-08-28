@@ -12,7 +12,7 @@ import WhatPeopleSliderCard from "./WhatPeopleSliderCard";
 const WhatPeople = () => {
   return (
     <section className="section-gap">
-      <div className="mx-auto max-w-[615px] text-center">
+      <div className="mx-auto max-w-[615px] text-center xl:mt-[-6px]">
         <HomeHeading
           subHeading="We want to hear from You!"
           heading="What people say about us"
@@ -20,7 +20,7 @@ const WhatPeople = () => {
           paragraphWidth={534}
         />
       </div>
-      <div className="mt-3 md:mt-8">
+      <div className="mt-3 md:mt-10">
         <Swiper
           modules={[Autoplay]}
           slidesPerView={1}

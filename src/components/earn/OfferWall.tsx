@@ -17,7 +17,7 @@ const OfferWall = () => {
   return (
     <section className="section-gap">
       <div className="text-center">
-        <h2 className="text-4xl">Offer Walls</h2>
+        <h2 className="text-4xl xl:mt-[-10px]">Offer Walls</h2>
         <p className="mx-auto mt-S10 max-w-[374px] text-sm text-CBDC4DA">
           Each Offer Wall contains hundreds of tasks to complete. Choose from
           one of them to start earning coins.
@@ -50,7 +50,7 @@ const OfferWall = () => {
           )}
       </div>
       <div
-        className={`mt-8 flex items-center justify-center md:mt-10 xl:mt-S60 ${
+        className={`mt-8 flex items-center justify-center md:mt-10 xl:mt-[70px] ${
           showData.length == offerAndCardData.length && "hidden"
         }`}
       >

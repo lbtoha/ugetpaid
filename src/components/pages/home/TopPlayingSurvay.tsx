@@ -13,7 +13,7 @@ import Icon from "../../shared/Icon";
 const TopPlayingSurvey = () => {
   return (
     <section className="section-gap">
-      <div className="mx-auto max-w-[615px] text-center">
+      <div className="mx-auto max-w-[615px] text-center xl:mt-[-8px]">
         <HomeHeading
           subHeading="Why is ugetpaid profitable"
           heading="Be the First to Know About Top Paying Survey Opportunities"

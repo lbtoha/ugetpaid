@@ -5,7 +5,6 @@ import howWork3 from "@/public/images/how-works-img-3.png";
 import { Tab } from "@headlessui/react";
 import { Fragment } from "react";
 import { v4 as uuidv4 } from "uuid";
-import HomeHeading from "../../shared/HomeHeading";
 import HowGetPaidImage from "./HowGetPaidImage";
 
 const HowGetPaid = () => {
@@ -33,12 +32,18 @@ const HowGetPaid = () => {
           <div className="grid-cols-12 items-center justify-between max-xl:space-y-5 xl:grid">
             <Tab.List className="col-span-5 space-y-3 md:space-y-5">
               <div className="mb-5 md:mb-10">
-                <HomeHeading
-                  subHeading="Getting started is simple"
-                  heading="How to Get Paid to Take Surveys"
-                  paragraph="It has been made as easy as possible to make money on ugetpaid.you can start in less than 30 seconds."
-                  paragraphWidth={374}
-                />
+                <div>
+                  <h5 className="text-lg text-C00FF8B md:text-xl xl:mt-[-30px] xl:text-2xl">
+                    Getting started is simple
+                  </h5>
+                  <h2 className="mt-[10px] text-2xl md:text-2.3xl lg:text-3xl xl:text-4xl">
+                    How to Get Paid to Take Surveys
+                  </h2>
+                  <p className={`mt-[10px] max-w-[374px] text-sm text-CBDC4DA`}>
+                    It has been made as easy as possible to make money on
+                    ugetpaid.you can start in less than 30 seconds.
+                  </p>
+                </div>
               </div>
               {chooseTaskData.map(({ id, number, heading }) => (
                 <Tab key={uuidv4()} as={Fragment}>

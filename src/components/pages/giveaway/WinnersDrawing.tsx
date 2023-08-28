@@ -8,7 +8,7 @@ import WinnerDrawingCard from "./WinnerDrawingCard";
 const WinnersDrawing = () => {
   return (
     <section className="section-gap">
-      <h2 className=" text-center text-[32px] font-semibold leading-[41.60px]">
+      <h2 className=" mt-[-7px] text-center text-[32px] font-semibold leading-[41.60px]">
         Winners Drawing In
       </h2>
       <div className="mt-5 grid grid-cols-1 items-center justify-start gap-3 sm:mt-8 md:grid-cols-2 md:gap-6 lg:mt-10 xl:mt-S60 xl:grid-cols-3 ">

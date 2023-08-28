@@ -13,9 +13,9 @@ const HomeHeading = ({
 }: Props) => {
   return (
     <div>
-      <p className="text-lg text-C00FF8B md:text-xl xl:text-2xl">
+      <h5 className="text-lg text-C00FF8B md:text-xl xl:text-2xl">
         {subHeading}
-      </p>
+      </h5>
       <h2 className="mt-[10px] text-2xl md:text-2.3xl lg:text-3xl xl:text-4xl">
         {heading}
       </h2>

@@ -44,13 +44,13 @@ const FeaturedOffer = () => {
   ];
 
   return (
-    <section className="4xl:pb-[185px]">
+    <section className="4xl:pb-[145px]">
       <div className="featured-offer-section relative mt-[15px] rounded-xl px-S15 pb-10 md:max-xl:pb-S80 xl:max-4xl:pb-S120">
         <div className="mx-auto max-w-[805px] pt-S80 text-center">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl xl:mt-[-18px] xl:text-7xl">
             Featured Offer
           </h1>
-          <p className="mt-S10 pb-8 md:pb-10 xl:pb-S70">
+          <p className="mt-S10 pb-8 md:pb-10 xl:pb-S60">
             People from your country have done the most of these things
             recently. (1000 Coins equals $1.00)
           </p>

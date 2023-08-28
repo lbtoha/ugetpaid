@@ -10,7 +10,7 @@ type Props = {
 const PageNavigationHeader = ({ title, items }: Props) => {
   return (
     <div className="flex items-center justify-between gap-4 bg-C2E3549 max-sm:flex-wrap max-sm:px-3 max-sm:py-7 sm:p-S30">
-      <h2 className="text-2.3xl font-semibold capitalize leading-[130%] text-white md:text-[50px] xl:text-[64px]">
+      <h2 className="text-2.3xl font-semibold capitalize leading-[130%] text-white md:text-[40px] xl:text-[48px]">
         {title}
       </h2>
 

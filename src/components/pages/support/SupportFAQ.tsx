@@ -15,7 +15,7 @@ const SupportFAQ = () => {
       <div className="grid-cols-12 3xl:grid">
         <div className="col-start-3 col-end-11 mx-auto space-y-5 bg-C22293A max-md:px-3 max-md:py-S30 md:space-y-10 md:p-S60 xl:space-y-S60 4xl:min-w-[980]">
           <div className="space-y-S10">
-            <p className="text-center text-2xl font-semibold leading-[33.60px] text-C00FF8B">
+            <p className="text-center text-2xl font-semibold leading-[33.60px] text-C00FF8B xl:mt-[-7px]">
               Questions and Answer
             </p>
             <h2 className=" text-center text-2xl font-semibold leading-[52px] sm:text-3xl md:text-[40px]">
@@ -36,7 +36,7 @@ const SupportFAQ = () => {
             </div>
           </div>
           <Tab.Group>
-            <Tab.List className="mx-auto flex max-w-[980px] flex-wrap justify-center gap-2.5 rounded-[15px] border border-[#5D6888] p-2.5 max-sm:flex-col sm:items-center ">
+            <Tab.List className="mx-auto !mt-8 flex  max-w-[980px] flex-wrap justify-center gap-2.5 rounded-[15px] border border-[#5D6888] p-2.5 max-sm:flex-col sm:items-center md:!mt-10 lg:!mt-S60">
               <Tab as={Fragment}>
                 {({ selected }) => (
                   <button
@@ -116,7 +116,7 @@ const SupportFAQ = () => {
                 )}
               </Tab>
             </Tab.List>
-            <Tab.Panels>
+            <Tab.Panels className="!mt-0">
               <Tab.Panel>
                 <FAQs faqs={faqs} />
               </Tab.Panel>

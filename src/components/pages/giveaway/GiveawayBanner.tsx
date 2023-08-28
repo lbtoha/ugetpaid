@@ -23,7 +23,9 @@ const GiveawayBanner = () => {
     <div className="giveawayBanner relative mt-5 md:mt-8 lg:mt-S30">
       <div className="pt-S60">
         <div>
-          <p className="text-center text-2xl">You can win money</p>
+          <p className="text-center text-2xl 3xl:mt-[-8px]">
+            You can win money
+          </p>
           <h2 className="mt-2.5 text-center text-4xl font-semibold text-C00D675 sm:text-5xl md:mt-5 xl:text-[80px]">
             $100,000
           </h2>

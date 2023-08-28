@@ -22,7 +22,7 @@ import DailyBonusItem from "./DailyBonusItem";
 import RewardsCountDown from "./RewardsCountDown";
 const Affiliates = () => {
   return (
-    <div className="mt-5 grid grid-cols-12 space-y-5 md:mt-8 md:max-3xl:space-y-6 lg:mt-10 3xl:space-x-6">
+    <div className="mt-5 grid grid-cols-12 md:mt-8 md:max-3xl:space-y-5 md:max-3xl:space-y-6 lg:mt-10 3xl:space-x-6">
       <div className="col-start-1 col-end-13 3xl:col-end-10">
         <div className="rounded-[15px] bg-C212737 px-5 py-[30px]">
           <div className="flex items-center justify-between">

@@ -12,7 +12,7 @@ const SocialSection = () => {
             alt="Logo dark"
             className="mx-auto block max-md:w-[150px]"
           />
-          <p className="mt-5 max-w-[804px] px-2 text-sm font-normal text-C1A1F2C sm:text-base md:mt-6 md:text-lg xl:mt-S30 xl:text-xl">
+          <p className="mt-5 max-w-[804px] px-2 text-sm !font-normal !leading-[150%] text-C1A1F2C sm:text-base md:mt-6 md:text-lg xl:mt-S30 xl:text-xl">
             Get Instant Access to Top Paying Surveys. Earn Up To $300 Per Day by
             Sharing your Opinion.If you want an easy way to make money from
             surveys, you should join the ugetpaid community.

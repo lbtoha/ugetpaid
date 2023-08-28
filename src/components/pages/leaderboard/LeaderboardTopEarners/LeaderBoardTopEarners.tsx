@@ -8,7 +8,9 @@ const LeaderBoardTopEarners = () => {
   return (
     <section className="section-gap">
       <div>
-        <h5 className="text-center text-2xl text-C00FF8B">Leaderboard</h5>
+        <h5 className="text-center text-2xl text-C00FF8B xl:mt-[-8px]">
+          Leaderboard
+        </h5>
         <h2 className="mx-auto max-w-[561px] text-center text-3xl sm:mt-S10 lg:text-4xl">
           The top earners are rewarded once every week!
         </h2>

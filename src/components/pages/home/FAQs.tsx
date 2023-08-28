@@ -29,7 +29,7 @@ const FAQs = () => {
   return (
     <section className="section-gap">
       <div className="faqs-section rounded-xl px-S15 py-10 md:py-[60px] lg:py-[80px] xl:py-[120px]">
-        <div className="mx-auto max-w-[615px] text-center">
+        <div className="mx-auto max-w-[615px] text-center xl:mt-[-6px]">
           <HomeHeading
             heading="Frequently asked questions"
             subHeading="FAQs"

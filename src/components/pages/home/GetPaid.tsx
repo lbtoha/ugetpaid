@@ -20,7 +20,7 @@ const GetPaid = () => {
         <div className="z-10 col-span-6 pb-S60 xl:pb-S80 xxl:pb-S120 4xl:col-span-5">
           <div className="pl-8 sm:pl-10 md:pl-S60">
             <h1 className="max-w-[612px]">
-              <span className="block text-2.3xl text-C00FF8B md:text-4xl 3xl:text-7xl">
+              <span className="block text-2.3xl text-C00FF8B md:text-4xl 3xl:mt-[-18px] 3xl:text-7xl">
                 Get Paid for{" "}
               </span>
               <div className="block text-2.3xl max-md:pt-2 md:text-4xl 3xl:text-7xl">

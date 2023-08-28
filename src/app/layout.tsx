@@ -50,8 +50,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>
-          UGETPAID | online survey for get paid website html template | NextJs
-          Template
+          UGETPAID | online survey for get paid website | NextJs Template
         </title>
       </head>
       <body

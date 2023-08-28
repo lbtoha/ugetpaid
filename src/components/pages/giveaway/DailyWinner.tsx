@@ -16,7 +16,7 @@ const DailyWinner = () => {
   return (
     <section className="section-gap">
       <div className="relative rounded-3xl border-C475377 lg:border lg:pb-S60">
-        <h2 className="text-center text-2xl font-semibold leading-[41.60px] md:text-[32px] lg:pt-[120px]">
+        <h2 className=" text-center text-2xl font-semibold leading-[41.60px] md:text-[32px] lg:pt-[111px]">
           Top Daily Winners
         </h2>
 

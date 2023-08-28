@@ -15,8 +15,8 @@ const TopWinner = () => {
   return (
     <section className="section-gap">
       <div className="w-full space-y-S30">
-        <div className=" flex items-center  justify-between">
-          <h2 className="text-2xl font-semibold leading-[41.60px] md:text-[32px]">
+        <div className=" flex items-center justify-between">
+          <h2 className="text-2xl font-semibold  md:text-[32px]">
             Top winners last 24 hours
           </h2>
           <div className=" flex items-center justify-center gap-5">

@@ -15,7 +15,7 @@ const FAQs = ({ faqs }: Props) => {
   };
 
   return (
-    <div className="mx-auto mt-10 max-w-[880px]">
+    <div className="mx-auto mt-5 max-w-[880px] md:mt-8 lg:mt-10">
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}

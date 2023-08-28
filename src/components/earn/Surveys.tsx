@@ -16,7 +16,7 @@ const Surveys = () => {
   const handleSetOpen = () => setOpen(true);
 
   return (
-    <section className="section-gap">
+    <section className="section-gap mt-[8px]">
       <div className="rounded-[10px] border-C535E7C lg:border lg:px-S15 lg:pb-S80 lg:pt-S60 xxl:pt-S120">
         <OfferPageSectionHeading
           key={uuidv4()}
@@ -51,7 +51,7 @@ const Surveys = () => {
         </div>
         <div
           // mt-8 md:mt-10 xl:mt-S60
-          className={` mt-8 flex items-center justify-center md:mt-10 xl:mt-S60 ${
+          className={` mt-8 flex items-center justify-center md:mt-10 xl:mt-[70px] xl:pb-[10px] ${
             showData.length == offerAndCardData.length && "hidden"
           }`}
         >
